@@ -6,7 +6,7 @@ package hr.fer.zemris.bool;
  * @author Igor Petkovski
  * 
  */
-public interface NamedBooleanSource {
+public interface NamedBooleanSource extends BooleanSource {
 
 	/**
 	 * Returns String representation of the named source.
