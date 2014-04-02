@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class BooleanOperatorNOT extends BooleanOperator {
 
-	public BooleanOperatorNOT(BooleanSource source) {
+	BooleanOperatorNOT(BooleanSource source) {
 		super(Arrays.asList(source));
 	}
 

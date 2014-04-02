@@ -8,7 +8,7 @@ import hr.fer.zemris.bool.BooleanVariable;
 
 public class BooleanOperatorAND extends BooleanOperator {
 
-	public BooleanOperatorAND(List<BooleanSource> list) {
+	BooleanOperatorAND(List<BooleanSource> list) {
 		super(list);
 	}
 

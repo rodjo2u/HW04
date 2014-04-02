@@ -9,7 +9,7 @@ import hr.fer.zemris.bool.BooleanVariable;
 
 public class BooleanOperatorOR extends BooleanOperator {
 
-	public BooleanOperatorOR(List<BooleanSource> booleanSourceList) {
+	BooleanOperatorOR(List<BooleanSource> booleanSourceList) {
 		super(booleanSourceList);
 	}
 
