@@ -2,6 +2,19 @@ package hr.fer.zemris.bool;
 
 import java.util.Arrays;
 
+/**
+ * This class supports work with boolean functions by concept of masks.
+ * <p>
+ * For example, consider a Boolean function defined over variables A, B, C and D
+ * (i.e. its domain is {A, B, C, D}). Mask “0x1x” represents all value
+ * assignments in which A=0 and C=1 (we don't care for B and D)); here there are
+ * for such assignments which we can specify by more specific masks: “0010”,
+ * “0011”, “0110” and “0111”.
+ * </p>
+ * 
+ * @author Igor Petkovski
+ * 
+ */
 public class Mask {
 
 	private MaskValue[] maskValues;
@@ -50,9 +63,9 @@ public class Mask {
 		}
 		MaskValue[] newMaskValues = new MaskValue[input.length()];
 		for (int i = 0; i < input.length(); i++) {
-			if (input.charAt(i) == 0) {
+			if (input.charAt(i) == '0') {
 				newMaskValues[i] = MaskValue.ZERO;
-			} else if (input.charAt(i) == 1) {
+			} else if (input.charAt(i) == '1') {
 				newMaskValues[i] = MaskValue.ONE;
 			} else {
 				newMaskValues[i] = MaskValue.DONT_CARE;
@@ -75,20 +88,20 @@ public class Mask {
 		// check if otherMask is not more general
 		for (int i = 0; i < maskValues.length; i++) {
 			switch (maskValues[i]) {
-			case DONT_CARE:
-				continue;
-			case ONE:
-				if (otherMask.maskValues[i].equals(MaskValue.ONE)) {
+				case DONT_CARE :
 					continue;
-				} else {
-					return false;
-				}
-			case ZERO:
-				if (otherMask.maskValues[i].equals(MaskValue.ZERO)) {
-					continue;
-				} else {
-					return false;
-				}
+				case ONE :
+					if (otherMask.maskValues[i].equals(MaskValue.ONE)) {
+						continue;
+					} else {
+						return false;
+					}
+				case ZERO :
+					if (otherMask.maskValues[i].equals(MaskValue.ZERO)) {
+						continue;
+					} else {
+						return false;
+					}
 			}
 		}
 		// if masks are not equal this.mask is more general
@@ -101,44 +114,65 @@ public class Mask {
 
 	/**
 	 * Combines two masks into new, more general Mask instance.
-	 * @param mask1 - must be same size of mask2
-	 * @param mask2 - must be same size of mask1
+	 * 
+	 * @param mask1
+	 *            - must be same size of mask2
+	 * @param mask2
+	 *            - must be same size of mask1
 	 * @return new Mask instance
 	 */
 	public static Mask combine(Mask mask1, Mask mask2) {
+		if (mask1 == null || mask2 == null) {
+			throw new IllegalArgumentException("Mask cannot me null!");
+		}
 		if (mask1.getSize() != mask2.getSize()) {
 			throw new IllegalArgumentException("Masks differ in size!");
 		}
 		MaskValue[] newMaskValues = new MaskValue[mask1.getSize()];
+		// if diffCounter==0 at the end masks are the same
+		int diffCounter = 0;
 		for (int i = 0; i < mask1.getSize(); i++) {
-			// if any mask value is DONT_CARE
+			// if both mask value is DONT_CARE
 			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)
-					|| mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+					&& mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
 				newMaskValues[i] = MaskValue.DONT_CARE;
+			}
+			// if one mask value is DONT_CARE
+			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)
+					&& !mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+				newMaskValues[i] = MaskValue.DONT_CARE;
+				diffCounter++;
+			}
+			if (!mask1.maskValues[i].equals(MaskValue.DONT_CARE)
+					&& mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+				newMaskValues[i] = MaskValue.DONT_CARE;
+				diffCounter++;
 			}
 			// if mask values are the same
 			if (mask1.maskValues[i].equals(mask2.maskValues[i])) {
 				newMaskValues[i] = mask1.maskValues[i];
 			} else {
 				newMaskValues[i] = MaskValue.DONT_CARE;
+				diffCounter++;
 			}
 		}
-
+		if (diffCounter == 0) {
+			return null;
+		}
 		return new Mask(newMaskValues);
 	}
 
 	public static Mask fromIndex(int size, int value) {
 		// check arguments
-		if(size < 1) {
+		if (size < 1) {
 			throw new IllegalArgumentException("Mask size must be > 0.");
 		}
-		if (size > Math.pow(2, size)) {
-			throw new IllegalArgumentException("Designated value is greater than size allows.");
+		if (value > Math.pow(2, size)) {
+			throw new IllegalArgumentException(
+					"Designated value is greater than size allows.");
 		}
 		// create new mask
-		System.out.println(String.format("%f%3", Integer.toBinaryString(value)));
-		
-		return null;
+		return Mask.parse(addPadding(Integer.toBinaryString(value), "0", size));
 	}
 
 	/**
@@ -175,8 +209,9 @@ public class Mask {
 		return maskValues.length;
 	}
 
-	
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#hashCode()
 	 */
 	@Override
@@ -187,7 +222,9 @@ public class Mask {
 		return result;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#equals(java.lang.Object)
 	 */
 	@Override
@@ -203,6 +240,25 @@ public class Mask {
 			return false;
 		return true;
 	}
-	
-	
+
+	/**
+	 * Adds padding at the start of the original String.
+	 * 
+	 * @param originalString
+	 *            - original string value
+	 * @param padding
+	 *            - string value to use as a padding
+	 * @param maxLength
+	 *            - new String length
+	 * @return new padded String instance
+	 */
+	private static String addPadding(String originalString, String padding,
+			int maxLength) {
+		String prefix = "";
+		for (int i = 0; i < maxLength - originalString.length(); i++) {
+			prefix = prefix.concat(padding);
+		}
+		return prefix + originalString;
+	}
+
 }

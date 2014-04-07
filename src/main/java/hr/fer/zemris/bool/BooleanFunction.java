@@ -20,15 +20,15 @@ package hr.fer.zemris.bool;
 public interface BooleanFunction extends NamedBooleanSource {
 
 	public boolean hasMinterm(int index);
-	
+
 	public boolean hasMaxterm(int index);
-	
+
 	public boolean hasDontCare(int index);
-	
-	public Iterable<Integer> mintermIteraable();
-	
+
+	public Iterable<Integer> mintermIterable();
+
 	public Iterable<Integer> maxtermIterable();
-	
+
 	public Iterable<Integer> dontCareIterable();
 
 }

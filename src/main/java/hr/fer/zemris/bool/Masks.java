@@ -1,17 +1,34 @@
 package hr.fer.zemris.bool;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Masks extends Mask {
 
-	public Masks() {
+	private Masks() {
 		super(null);
 	}
 
+	/**
+	 * Creates a list of masks based on Mask.fromIndex function. You can supply
+	 * the method with arbitrary number of values, but all masks will be of
+	 * constant size.
+	 * 
+	 * Masks will only have values 0 and 1.
+	 * 
+	 * @param size
+	 *            length of the masks
+	 * @param values
+	 *            list of masks with the values values
+	 * @return List<Mask>
+	 */
 	public static List<Mask> fromIndexes(int size, int... values) {
-		// TODO implement
-		return null;
+		List<Mask> list = new LinkedList<>();
+		for (int value : values) {
+			list.add(Mask.fromIndex(size, value));
+		}
+		return list;
 	}
 
 	/**

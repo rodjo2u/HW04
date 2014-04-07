@@ -22,7 +22,7 @@ public interface BooleanSource {
 	 * Returns the list of variables on which the method getValue() has produced
 	 * it's value.
 	 * 
-	 * @return
+	 * @return List<BooleanVariable>
 	 */
 	public List<BooleanVariable> getDomain();
 }

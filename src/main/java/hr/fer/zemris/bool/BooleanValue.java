@@ -1,6 +1,3 @@
-/**
- * Enumerator class for all legitimate boolean values specified in fourth homework assignment.
- */
 package hr.fer.zemris.bool;
 
 /**
