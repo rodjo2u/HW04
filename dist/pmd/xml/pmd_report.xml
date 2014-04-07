@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.1.0" timestamp="2014-04-07T07:51:11.155">
+<file name="hr\fer\zemris\bool\BooleanConstant.java">
+<violation beginline="23" endline="44" begincolumn="8" endcolumn="1" rule="ClassWithOnlyPrivateConstructorsShouldBeFinal" ruleset="Design" package="hr.fer.zemris.bool" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ClassWithOnlyPrivateConstructorsShouldBeFinal" priority="1">
+A class which only has private constructors should be final
+</violation>
+<violation beginline="25" endline="25" begincolumn="30" endcolumn="34" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool" class="BooleanConstant" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'value' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="27" endline="27" begincolumn="33" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="BooleanConstant" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="39" endline="40" begincolumn="29" endcolumn="43" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="hr.fer.zemris.bool" class="BooleanConstant" variable="TRUE" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+<violation beginline="42" endline="43" begincolumn="29" endcolumn="44" rule="FieldDeclarationsShouldBeAtStartOfClass" ruleset="Design" package="hr.fer.zemris.bool" class="BooleanConstant" variable="FALSE" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass" priority="3">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\BooleanFunction.java">
+<violation beginline="22" endline="22" begincolumn="16" endcolumn="45" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="24" endline="24" begincolumn="16" endcolumn="45" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="26" endline="26" begincolumn="16" endcolumn="46" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="28" endline="28" begincolumn="16" endcolumn="51" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="30" endline="30" begincolumn="16" endcolumn="51" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="32" endline="32" begincolumn="16" endcolumn="52" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\BooleanOperator.java">
+<violation beginline="19" endline="43" begincolumn="17" endcolumn="1" rule="AbstractNaming" ruleset="Naming" package="hr.fer.zemris.bool" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#AbstractNaming" priority="3">
+Abstract classes should be named AbstractXXX
+</violation>
+<violation beginline="21" endline="21" begincolumn="37" endcolumn="53" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool" class="BooleanOperator" variable="booleanSourceList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'booleanSourceList' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="23" endline="23" begincolumn="35" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="BooleanOperator" variable="booleanSourceList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'booleanSourceList' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="38" begincolumn="25" endcolumn="65" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="BooleanOperator" method="getDomain" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 's' (lines '35'-'38').
+</violation>
+<violation beginline="36" endline="36" begincolumn="39" endcolumn="57" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.bool" class="BooleanOperator" method="getDomain" variable="booleanVariableList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like booleanVariableList
+</violation>
+<violation beginline="36" endline="36" begincolumn="17" endcolumn="93" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="BooleanOperator" method="getDomain" variable="booleanVariableList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'booleanVariableList' could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="36" endcolumn="36" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.bool" class="BooleanOperator" method="getDomain" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="37" endline="37" begincolumn="22" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="BooleanOperator" method="getDomain" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\BooleanSource.java">
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="39" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanSource" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+<violation beginline="27" endline="27" begincolumn="16" endcolumn="49" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="BooleanSource" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\BooleanVariable.java">
+<violation beginline="18" endline="18" begincolumn="24" endcolumn="27" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool" class="BooleanVariable" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="20" endline="20" begincolumn="32" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="BooleanVariable" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="34" endline="34" begincolumn="30" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="BooleanVariable" method="setValue" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="39" endline="39" begincolumn="17" endcolumn="84" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="BooleanVariable" method="getDomain" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\Mask.java">
+<violation beginline="18" endline="297" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Naming" package="hr.fer.zemris.bool" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortClassName" priority="4">
+A Classname should have a minimum of five characters
+</violation>
+<violation beginline="18" endline="297" begincolumn="8" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.bool" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'Mask' has a Cyclomatic Complexity of 4 (Highest = 13).
+</violation>
+<violation beginline="20" endline="20" begincolumn="29" endcolumn="38" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool" class="Mask" variable="maskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'maskValues' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="22" endline="22" begincolumn="21" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" variable="maskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'maskValues' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="21" endcolumn="42" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="hr.fer.zemris.bool" class="Mask" variable="maskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/sunsecure.html#ArrayIsStoredDirectly" priority="3">
+The user-supplied array 'maskValues' is stored directly.
+</violation>
+<violation beginline="33" endline="33" begincolumn="35" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="getValue" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="59" endline="59" begincolumn="34" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="input" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'input' is not assigned and could be declared final
+</violation>
+<violation beginline="64" endline="67" begincolumn="33" endcolumn="65" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '64'-'67').
+</violation>
+<violation beginline="64" endline="69" begincolumn="33" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '64'-'69').
+</violation>
+<violation beginline="64" endline="71" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '64'-'71').
+</violation>
+<violation beginline="66" endline="66" begincolumn="48" endcolumn="50" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="67" endline="67" begincolumn="33" endcolumn="65" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '67'-'67').
+</violation>
+<violation beginline="67" endline="69" begincolumn="33" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '67'-'69').
+</violation>
+<violation beginline="67" endline="71" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '67'-'71').
+</violation>
+<violation beginline="68" endline="68" begincolumn="55" endcolumn="57" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="69" endline="67" begincolumn="33" endcolumn="65" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '69'-'67').
+</violation>
+<violation beginline="69" endline="69" begincolumn="33" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '69'-'69').
+</violation>
+<violation beginline="69" endline="71" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '69'-'71').
+</violation>
+<violation beginline="71" endline="67" begincolumn="33" endcolumn="65" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '71'-'67').
+</violation>
+<violation beginline="71" endline="69" begincolumn="33" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '71'-'69').
+</violation>
+<violation beginline="71" endline="71" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="parse" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '71'-'71').
+</violation>
+<violation beginline="84" endline="84" begincolumn="42" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="isMoreGeneralThan" variable="otherMask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'otherMask' is not assigned and could be declared final
+</violation>
+<violation beginline="90" endline="105" begincolumn="25" endcolumn="25" rule="MissingBreakInSwitch" ruleset="Design" package="hr.fer.zemris.bool" class="Mask" method="isMoreGeneralThan" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#MissingBreakInSwitch" priority="3">
+A switch statement does not contain a break
+</violation>
+<violation beginline="90" endline="105" begincolumn="25" endcolumn="25" rule="SwitchStmtsShouldHaveDefault" ruleset="Design" package="hr.fer.zemris.bool" class="Mask" method="isMoreGeneralThan" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#SwitchStmtsShouldHaveDefault" priority="3">
+Switch statements should have a default label
+</violation>
+<violation beginline="97" endline="97" begincolumn="49" endcolumn="61" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="isMoreGeneralThan" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="103" endline="103" begincolumn="49" endcolumn="61" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="isMoreGeneralThan" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="109" endline="109" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="isMoreGeneralThan" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="124" endline="124" begincolumn="36" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="mask1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'mask1' is not assigned and could be declared final
+</violation>
+<violation beginline="124" endline="124" begincolumn="48" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="mask2" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'mask2' is not assigned and could be declared final
+</violation>
+<violation beginline="124" endline="163" begincolumn="23" endcolumn="9" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.bool" class="Mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'combine' has a Cyclomatic Complexity of 13.
+</violation>
+<violation beginline="124" endline="163" begincolumn="23" endcolumn="9" rule="NPathComplexity" ruleset="Code Size" package="hr.fer.zemris.bool" class="Mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#NPathComplexity" priority="3">
+The method combine() has an NPath complexity of 660
+</violation>
+<violation beginline="131" endline="138" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'138').
+</violation>
+<violation beginline="131" endline="143" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'143').
+</violation>
+<violation beginline="131" endline="148" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'148').
+</violation>
+<violation beginline="131" endline="153" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'153').
+</violation>
+<violation beginline="131" endline="155" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'155').
+</violation>
+<violation beginline="131" endline="163" begincolumn="29" endcolumn="74" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'newMaskValues' (lines '131'-'163').
+</violation>
+<violation beginline="133" endline="144" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '133'-'144').
+</violation>
+<violation beginline="133" endline="149" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '133'-'149').
+</violation>
+<violation beginline="133" endline="156" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '133'-'156').
+</violation>
+<violation beginline="138" endline="143" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'143').
+</violation>
+<violation beginline="138" endline="148" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'148').
+</violation>
+<violation beginline="138" endline="153" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'153').
+</violation>
+<violation beginline="138" endline="155" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'155').
+</violation>
+<violation beginline="143" endline="148" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '143'-'148').
+</violation>
+<violation beginline="143" endline="153" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '143'-'153').
+</violation>
+<violation beginline="143" endline="155" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '143'-'155').
+</violation>
+<violation beginline="144" endline="144" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '144'-'144').
+</violation>
+<violation beginline="144" endline="149" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '144'-'149').
+</violation>
+<violation beginline="144" endline="156" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '144'-'156').
+</violation>
+<violation beginline="148" endline="153" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '148'-'153').
+</violation>
+<violation beginline="148" endline="155" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '148'-'155').
+</violation>
+<violation beginline="149" endline="144" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '149'-'144').
+</violation>
+<violation beginline="149" endline="149" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '149'-'149').
+</violation>
+<violation beginline="149" endline="156" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '149'-'156').
+</violation>
+<violation beginline="153" endline="138" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'138').
+</violation>
+<violation beginline="153" endline="143" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'143').
+</violation>
+<violation beginline="153" endline="148" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'148').
+</violation>
+<violation beginline="153" endline="153" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'153').
+</violation>
+<violation beginline="153" endline="155" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'155').
+</violation>
+<violation beginline="153" endline="163" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'newMaskValues' (lines '153'-'163').
+</violation>
+<violation beginline="155" endline="138" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'138').
+</violation>
+<violation beginline="155" endline="143" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'143').
+</violation>
+<violation beginline="155" endline="148" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'148').
+</violation>
+<violation beginline="155" endline="153" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'153').
+</violation>
+<violation beginline="155" endline="155" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'155').
+</violation>
+<violation beginline="155" endline="163" begincolumn="33" endcolumn="70" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="newMaskValues" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'newMaskValues' (lines '155'-'163').
+</violation>
+<violation beginline="156" endline="144" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '156'-'144').
+</violation>
+<violation beginline="156" endline="149" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '156'-'149').
+</violation>
+<violation beginline="156" endline="156" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" variable="diffCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '156'-'156').
+</violation>
+<violation beginline="159" endline="159" begincolumn="36" endcolumn="36" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="160" endline="160" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="combine" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="165" endline="165" begincolumn="38" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="fromIndex" variable="size" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'size' is not assigned and could be declared final
+</violation>
+<violation beginline="165" endline="165" begincolumn="48" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="fromIndex" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'value' is not assigned and could be declared final
+</violation>
+<violation beginline="167" endline="167" begincolumn="28" endcolumn="28" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="fromIndex" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="183" endline="186" begincolumn="29" endcolumn="56" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfZeros" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'value' (lines '183'-'186').
+</violation>
+<violation beginline="184" endline="187" begincolumn="33" endcolumn="47" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfZeros" variable="numberOfZeros" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfZeros' (lines '184'-'187').
+</violation>
+<violation beginline="185" endline="185" begincolumn="22" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfZeros" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'value' could be declared final
+</violation>
+<violation beginline="187" endline="187" begincolumn="33" endcolumn="47" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfZeros" variable="numberOfZeros" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfZeros' (lines '187'-'187').
+</violation>
+<violation beginline="198" endline="201" begincolumn="29" endcolumn="55" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfOnes" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'value' (lines '198'-'201').
+</violation>
+<violation beginline="199" endline="202" begincolumn="33" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfOnes" variable="numberOfOnes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfOnes' (lines '199'-'202').
+</violation>
+<violation beginline="200" endline="200" begincolumn="22" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfOnes" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'value' could be declared final
+</violation>
+<violation beginline="202" endline="202" begincolumn="33" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfOnes" variable="numberOfOnes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfOnes' (lines '202'-'202').
+</violation>
+<violation beginline="213" endline="216" begincolumn="29" endcolumn="61" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfDontCares" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'value' (lines '213'-'216').
+</violation>
+<violation beginline="214" endline="217" begincolumn="33" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfDontCares" variable="numberOfDontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfDontCares' (lines '214'-'217').
+</violation>
+<violation beginline="215" endline="215" begincolumn="22" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfDontCares" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'value' could be declared final
+</violation>
+<violation beginline="217" endline="217" begincolumn="33" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="getNumberOfDontCares" variable="numberOfDontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfDontCares' (lines '217'-'217').
+</violation>
+<violation beginline="234" endline="234" begincolumn="17" endcolumn="36" rule="AvoidFinalLocalVariable" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="hashCode" variable="prime" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidFinalLocalVariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="235" endline="236" begincolumn="17" endcolumn="69" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="hashCode" variable="result" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'result' (lines '235'-'236').
+</violation>
+<violation beginline="246" endline="246" begincolumn="31" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="equals" variable="obj" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'obj' is not assigned and could be declared final
+</violation>
+<violation beginline="247" endline="248" begincolumn="17" endcolumn="36" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="248" endline="248" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="249" endline="250" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="250" endline="250" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="251" endline="252" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="252" endline="252" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="253" endline="253" begincolumn="17" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="equals" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'other' could be declared final
+</violation>
+<violation beginline="254" endline="255" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="255" endline="255" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="270" endline="270" begincolumn="42" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="addPadding" variable="originalString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'originalString' is not assigned and could be declared final
+</violation>
+<violation beginline="270" endline="270" begincolumn="65" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="addPadding" variable="padding" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'padding' is not assigned and could be declared final
+</violation>
+<violation beginline="271" endline="271" begincolumn="25" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Mask" method="addPadding" variable="maxLength" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'maxLength' is not assigned and could be declared final
+</violation>
+<violation beginline="272" endline="274" begincolumn="25" endcolumn="55" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="addPadding" variable="prefix" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'prefix' (lines '272'-'274').
+</violation>
+<violation beginline="281" endline="285" begincolumn="41" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="toString" variable="result" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'result' (lines '281'-'285').
+</violation>
+<violation beginline="281" endline="288" begincolumn="41" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="toString" variable="result" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'result' (lines '281'-'288').
+</violation>
+<violation beginline="281" endline="291" begincolumn="41" endcolumn="67" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Mask" method="toString" variable="result" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'result' (lines '281'-'291').
+</violation>
+<violation beginline="283" endline="293" begincolumn="25" endcolumn="25" rule="SwitchStmtsShouldHaveDefault" ruleset="Design" package="hr.fer.zemris.bool" class="Mask" method="toString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#SwitchStmtsShouldHaveDefault" priority="3">
+Switch statements should have a default label
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\Masks.java">
+<violation beginline="7" endline="48" begincolumn="8" endcolumn="1" rule="ClassWithOnlyPrivateConstructorsShouldBeFinal" ruleset="Design" package="hr.fer.zemris.bool" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ClassWithOnlyPrivateConstructorsShouldBeFinal" priority="1">
+A class which only has private constructors should be final
+</violation>
+<violation beginline="26" endline="29" begincolumn="25" endcolumn="61" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool" class="Masks" method="fromIndexes" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'value' (lines '26'-'29').
+</violation>
+<violation beginline="26" endline="26" begincolumn="46" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Masks" method="fromIndexes" variable="size" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'size' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="56" endcolumn="68" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Masks" method="fromIndexes" variable="values" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'values' is not assigned and could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="17" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Masks" method="fromIndexes" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Masks" method="fromIndexes" variable="value" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'value' could be declared final
+</violation>
+<violation beginline="41" endline="41" begincolumn="46" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Masks" method="fromStrings" variable="strings" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'strings' is not assigned and could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool" class="Masks" method="fromStrings" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\NamedBooleanSource.java">
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="32" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.bool" class="NamedBooleanSource" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\fimpl\IndexedBF.java">
+<violation beginline="21" endline="216" begincolumn="51" endcolumn="1" rule="TooManyMethods" ruleset="Code Size" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#TooManyMethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="23" endline="23" begincolumn="24" endcolumn="27" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="24" endline="24" begincolumn="39" endcolumn="44" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'domain' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="25" endline="25" begincolumn="25" endcolumn="42" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="indexesAreMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like indexesAreMinterms
+</violation>
+<violation beginline="25" endline="25" begincolumn="25" endcolumn="42" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="indexesAreMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'indexesAreMinterms' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="26" endline="26" begincolumn="31" endcolumn="37" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="indexes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'indexes' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="27" endline="27" begincolumn="31" endcolumn="39" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="dontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'dontCares' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="29" endline="29" begincolumn="39" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'domain' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="26" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="33" endcolumn="50" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="indexesAreMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like indexesAreMinterms
+</violation>
+<violation beginline="30" endline="30" begincolumn="53" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="indexes" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'indexes' is not assigned and could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="25" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="indexesAreMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'indexesAreMinterms' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="25" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" variable="dontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dontCares' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="35" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="hasMinterm" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="57" endline="57" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="hasMinterm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="59" endline="59" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="hasMinterm" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="69" endline="69" begincolumn="35" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="hasMaxterm" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="36" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="hasDontCare" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="82" endline="82" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="hasDontCare" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="101" endline="101" begincolumn="46" endcolumn="66" rule="AccessorClassGeneration" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="maxtermIterable" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#AccessorClassGeneration" priority="3">
+Avoid instantiation through private constructors from outside of the constructors class.
+</violation>
+<violation beginline="101" endline="101" begincolumn="17" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="maxtermIterable" variable="iterator" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'iterator' could be declared final
+</violation>
+<violation beginline="102" endline="102" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="maxtermIterable" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="29" endcolumn="39" rule="RedundantFieldInitializer" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF$MaxtermIterator" variable="current" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#RedundantFieldInitializer" priority="3">
+Avoid using redundant field initializer for 'current'
+</violation>
+<violation beginline="157" endline="157" begincolumn="46" endcolumn="66" rule="AccessorClassGeneration" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="mintermIterable" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#AccessorClassGeneration" priority="3">
+Avoid instantiation through private constructors from outside of the constructors class.
+</violation>
+<violation beginline="157" endline="157" begincolumn="17" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="mintermIterable" variable="iterator" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'iterator' could be declared final
+</violation>
+<violation beginline="158" endline="158" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF" method="mintermIterable" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'list' could be declared final
+</violation>
+<violation beginline="173" endline="173" begincolumn="29" endcolumn="39" rule="RedundantFieldInitializer" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="IndexedBF$MintermIterator" variable="current" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#RedundantFieldInitializer" priority="3">
+Avoid using redundant field initializer for 'current'
+</violation>
+<violation beginline="177" endline="185" begincolumn="25" endcolumn="25" rule="ConfusingTernary" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="IndexedBF$MintermIterator" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ConfusingTernary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\fimpl\MaskBasedBF.java">
+<violation beginline="13" endline="13" begincolumn="24" endcolumn="27" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="14" endline="14" begincolumn="39" endcolumn="44" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'domain' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="15" endline="15" begincolumn="25" endcolumn="40" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="masksAreMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'masksAreMinterms' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="16" endline="16" begincolumn="28" endcolumn="32" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="masks" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'masks' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="17" endline="17" begincolumn="28" endcolumn="40" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="dontCareMasks" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'dontCareMasks' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="21" endline="21" begincolumn="41" endcolumn="68" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'domain' is not assigned and could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="28" endcolumn="38" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="69" endcolumn="92" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="dontCareMasks" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'dontCareMasks' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="51" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="masks" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'masks' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="25" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" variable="masksAreMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'masksAreMinterms' is not assigned and could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="35" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="hasMinterm" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="57" endline="57" begincolumn="35" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="hasMaxterm" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="36" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="hasDontCare" variable="index" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="81" endline="85" begincolumn="25" endcolumn="84" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'mask' (lines '81'-'85').
+</violation>
+<violation beginline="82" endline="82" begincolumn="28" endcolumn="46" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="parsedMasksMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like parsedMasksMinterms
+</violation>
+<violation beginline="82" endline="82" begincolumn="17" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="parsedMasksMinterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'parsedMasksMinterms' could be declared final
+</violation>
+<violation beginline="83" endline="83" begincolumn="31" endcolumn="48" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="mintermsOrMaxterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like mintermsOrMaxterms
+</violation>
+<violation beginline="83" endline="83" begincolumn="17" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="mintermsOrMaxterms" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'mintermsOrMaxterms' could be declared final
+</violation>
+<violation beginline="84" endline="84" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'mask' could be declared final
+</violation>
+<violation beginline="87" endline="87" begincolumn="28" endcolumn="47" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="parsedMasksDontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like parsedMasksDontCares
+</violation>
+<violation beginline="87" endline="87" begincolumn="17" endcolumn="80" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="parsedMasksDontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'parsedMasksDontCares' could be declared final
+</violation>
+<violation beginline="88" endline="88" begincolumn="17" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="dontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'dontCares' could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="initialize" variable="mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'mask' could be declared final
+</violation>
+<violation beginline="103" endline="106" begincolumn="29" endcolumn="60" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="removeDontCares" variable="mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'mask' (lines '103'-'106').
+</violation>
+<violation beginline="103" endline="103" begincolumn="44" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="removeDontCares" variable="maskList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'maskList' is not assigned and could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="17" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="removeDontCares" variable="newList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newList' could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="removeDontCares" variable="mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'mask' could be declared final
+</violation>
+<violation beginline="106" endline="106" begincolumn="60" endcolumn="60" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="removeDontCares" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="122" endline="122" begincolumn="36" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="addParsedMask" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'list' is not assigned and could be declared final
+</violation>
+<violation beginline="122" endline="122" begincolumn="53" endcolumn="61" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="addParsedMask" variable="mask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'mask' is not assigned and could be declared final
+</violation>
+<violation beginline="123" endline="123" begincolumn="52" endcolumn="52" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.bool.fimpl" class="MaskBasedBF" method="addParsedMask" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\fimpl\OperatorTreeBF.java">
+<violation beginline="11" endline="11" begincolumn="24" endcolumn="27" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="12" endline="12" begincolumn="39" endcolumn="44" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'domain' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="13" endline="13" begincolumn="33" endcolumn="44" rule="UnusedPrivateField" ruleset="Unused Code" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="operatorTree" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'operatorTree'.
+</violation>
+<violation beginline="13" endline="13" begincolumn="17" endcolumn="45" rule="SingularField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="operatorTree" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#SingularField" priority="3">
+Perhaps 'operatorTree' could be replaced by a local variable.
+</violation>
+<violation beginline="13" endline="13" begincolumn="33" endcolumn="44" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="operatorTree" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'operatorTree' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="15" endline="15" begincolumn="44" endcolumn="71" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="domain" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'domain' is not assigned and could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="31" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="16" endline="16" begincolumn="25" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.fimpl" class="OperatorTreeBF" variable="operatorTree" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'operatorTree' is not assigned and could be declared final
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java">
+<violation beginline="11" endline="11" begincolumn="28" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'list' is not assigned and could be declared final
+</violation>
+<violation beginline="16" endline="19" begincolumn="29" endcolumn="69" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" variable="var" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'var' (lines '16'-'19').
+</violation>
+<violation beginline="17" endline="22" begincolumn="33" endcolumn="49" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" variable="isDontCare" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'isDontCare' (lines '17'-'22').
+</violation>
+<violation beginline="17" endline="29" begincolumn="25" endcolumn="42" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" variable="isDontCare" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'isDontCare' (lines '17'-'29').
+</violation>
+<violation beginline="18" endline="18" begincolumn="22" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" variable="var" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'var' could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="33" endcolumn="58" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="22" endline="22" begincolumn="33" endcolumn="49" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" variable="isDontCare" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'isDontCare' (lines '22'-'22').
+</violation>
+<violation beginline="22" endline="29" begincolumn="33" endcolumn="49" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" variable="isDontCare" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'isDontCare' (lines '22'-'29').
+</violation>
+<violation beginline="26" endline="26" begincolumn="25" endcolumn="54" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorAND" method="getValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\opimpl\BooleanOperatorNOT.java">
+<violation beginline="12" endline="12" begincolumn="28" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorNOT" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'source' is not assigned and could be declared final
+</violation>
+<violation beginline="17" endline="19" begincolumn="29" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorNOT" method="getValue" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 's' (lines '17'-'19').
+</violation>
+<violation beginline="18" endline="18" begincolumn="35" endcolumn="35" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorNOT" method="getValue" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="18" endline="18" begincolumn="21" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorNOT" method="getValue" variable="s" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="20" endline="20" begincolumn="33" endcolumn="58" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorNOT" method="getValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="22" endline="22" begincolumn="33" endcolumn="57" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorNOT" method="getValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java">
+<violation beginline="12" endline="12" begincolumn="27" endcolumn="63" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" variable="booleanSourceList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'booleanSourceList' is not assigned and could be declared final
+</violation>
+<violation beginline="17" endline="20" begincolumn="28" endcolumn="72" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" variable="var" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'var' (lines '17'-'20').
+</violation>
+<violation beginline="18" endline="23" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" variable="isTrue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'isTrue' (lines '18'-'23').
+</violation>
+<violation beginline="18" endline="30" begincolumn="25" endcolumn="38" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" variable="isTrue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'isTrue' (lines '18'-'30').
+</violation>
+<violation beginline="19" endline="19" begincolumn="22" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" variable="var" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'var' could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="33" endcolumn="62" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="23" endline="23" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" variable="isTrue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'isTrue' (lines '23'-'23').
+</violation>
+<violation beginline="23" endline="30" begincolumn="33" endcolumn="45" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" variable="isTrue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'isTrue' (lines '23'-'30').
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="49" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.bool.opimpl" class="BooleanOperatorOR" method="getValue" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="hr\fer\zemris\bool\opimpl\BooleanOperators.java">
+<violation beginline="8" endline="25" begincolumn="8" endcolumn="1" rule="ClassWithOnlyPrivateConstructorsShouldBeFinal" ruleset="Design" package="hr.fer.zemris.bool.opimpl" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ClassWithOnlyPrivateConstructorsShouldBeFinal" priority="1">
+A class which only has private constructors should be final
+</violation>
+<violation beginline="14" endline="14" begincolumn="43" endcolumn="74" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperators" method="and" variable="booleanSources" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'booleanSources' is not assigned and could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="39" endcolumn="74" rule="ShortMethodName" ruleset="Naming" package="hr.fer.zemris.bool.opimpl" class="BooleanOperators" method="or" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortMethodName" priority="3">
+Avoid using short method names
+</violation>
+<violation beginline="18" endline="18" begincolumn="42" endcolumn="73" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperators" method="or" variable="booleanSources" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'booleanSources' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="43" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.bool.opimpl" class="BooleanOperators" method="not" variable="source" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'source' is not assigned and could be declared final
+</violation>
+</file>
+<file name="hr\fer\zemris\java\tecaj\hw4\db\IFilter.java">
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="53" rule="UnusedModifier" ruleset="Unused Code" package="hr.fer.zemris.java.tecaj.hw4.db" class="IFilter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier" priority="3">
+Avoid modifiers which are implied by the context
+</violation>
+</file>
+<file name="hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter.java">
+<violation beginline="15" endline="15" begincolumn="24" endcolumn="28" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" variable="regex" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'regex' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="24" endline="24" begincolumn="31" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" variable="filter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'filter' is not assigned and could be declared final
+</violation>
+<violation beginline="34" endline="34" begincolumn="32" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" method="accepts" variable="record" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'record' is not assigned and could be declared final
+</violation>
+<violation beginline="35" endline="35" begincolumn="25" endcolumn="25" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" method="accepts" variable="p" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like p
+</violation>
+<violation beginline="35" endline="35" begincolumn="17" endcolumn="83" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" method="accepts" variable="p" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'p' could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="25" endcolumn="25" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" method="accepts" variable="m" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like m
+</violation>
+<violation beginline="36" endline="36" begincolumn="17" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" method="accepts" variable="m" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'm' could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="LastNameFilter" method="accepts" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java">
+<violation beginline="24" endline="179" begincolumn="24" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="26" endline="26" begincolumn="40" endcolumn="41" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" variable="sd" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like sd
+</violation>
+<violation beginline="28" endline="28" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="44" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="createDatabase" variable="path" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'path' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="39" begincolumn="25" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="createDatabase" variable="lines" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'lines' could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="26" endcolumn="34" rule="AvoidCatchingGenericException" ruleset="Strict Exceptions" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="createDatabase" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/strictexception.html#AvoidCatchingGenericException" priority="3">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</violation>
+<violation beginline="57" endline="57" begincolumn="40" endcolumn="41" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" variable="br" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like br
+</violation>
+<violation beginline="57" endline="58" begincolumn="25" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" variable="br" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'br' could be declared final
+</violation>
+<violation beginline="62" endline="62" begincolumn="32" endcolumn="62" rule="AssignmentInOperand" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AssignmentInOperand" priority="3">
+Avoid assignments in operands
+</violation>
+<violation beginline="62" endline="93" begincolumn="32" endcolumn="62" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" variable="input" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'input' (lines '62'-'93').
+</violation>
+<violation beginline="63" endline="63" begincolumn="37" endcolumn="56" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="67" endline="67" begincolumn="41" endcolumn="41" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" variable="p" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like p
+</violation>
+<violation beginline="67" endline="70" begincolumn="33" endcolumn="96" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" variable="p" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'p' could be declared final
+</violation>
+<violation beginline="71" endline="71" begincolumn="41" endcolumn="41" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" variable="m" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like m
+</violation>
+<violation beginline="71" endline="71" begincolumn="33" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" variable="m" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'm' could be declared final
+</violation>
+<violation beginline="72" endline="86" begincolumn="33" endcolumn="33" rule="ConfusingTernary" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="waitForQueries" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ConfusingTernary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="95" endline="95" begincolumn="45" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseJmbagQuery" variable="jmbag" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'jmbag' is not assigned and could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="47" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="displayJmbagQuery" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'student' is not assigned and could be declared final
+</violation>
+<violation beginline="108" endline="112" begincolumn="25" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="displayJmbagQuery" variable="firstAndLastLine" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'firstAndLastLine' could be declared final
+</violation>
+<violation beginline="109" endline="109" begincolumn="91" endcolumn="95" rule="AvoidDuplicateLiterals" ruleset="String and StringBuffer" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="displayJmbagQuery" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/strings.html#AvoidDuplicateLiterals" priority="3">
+The String literal &quot;=+=&quot; appears 4 times in this file; the first occurrence is on line 109
+</violation>
+<violation beginline="121" endline="137" begincolumn="25" endcolumn="77" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'student' (lines '121'-'137').
+</violation>
+<violation beginline="121" endline="121" begincolumn="48" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="lastNameRegex" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'lastNameRegex' is not assigned and could be declared final
+</violation>
+<violation beginline="122" endline="122" begincolumn="17" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="lnFilter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'lnFilter' could be declared final
+</violation>
+<violation beginline="123" endline="123" begincolumn="37" endcolumn="58" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="filteredStudentRecords" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like filteredStudentRecords
+</violation>
+<violation beginline="123" endline="123" begincolumn="17" endcolumn="80" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="filteredStudentRecords" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'filteredStudentRecords' could be declared final
+</violation>
+<violation beginline="125" endline="130" begincolumn="17" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="firstAndLastLine" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'firstAndLastLine' could be declared final
+</violation>
+<violation beginline="133" endline="142" begincolumn="21" endcolumn="83" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="longestLastName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'longestLastName' (lines '133'-'142').
+</violation>
+<violation beginline="133" endline="133" begincolumn="17" endcolumn="83" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="longestLastName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'longestLastName' could be declared final
+</violation>
+<violation beginline="134" endline="142" begincolumn="21" endcolumn="75" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="longestName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'longestName' (lines '134'-'142').
+</violation>
+<violation beginline="134" endline="134" begincolumn="17" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="longestName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'longestName' could be declared final
+</violation>
+<violation beginline="136" endline="136" begincolumn="22" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="parseLastNameQuery" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'student' could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="44" endcolumn="64" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="displayStudent" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'student' is not assigned and could be declared final
+</violation>
+<violation beginline="145" endline="145" begincolumn="25" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="displayStudent" variable="lastNameLength" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'lastNameLength' is not assigned and could be declared final
+</violation>
+<violation beginline="145" endline="145" begincolumn="45" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="displayStudent" variable="nameLength" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'nameLength' is not assigned and could be declared final
+</violation>
+<violation beginline="169" endline="169" begincolumn="48" endcolumn="48" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="buildString" variable="c" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like c
+</violation>
+<violation beginline="169" endline="169" begincolumn="43" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="buildString" variable="c" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'c' is not assigned and could be declared final
+</violation>
+<violation beginline="169" endline="169" begincolumn="51" endcolumn="59" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="buildString" variable="times" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'times' is not assigned and could be declared final
+</violation>
+<violation beginline="170" endline="170" begincolumn="30" endcolumn="30" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="buildString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="171" endline="171" begincolumn="25" endcolumn="34" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="buildString" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="173" endline="175" begincolumn="25" endcolumn="65" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDB" method="buildString" variable="output" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'output' (lines '173'-'175').
+</violation>
+</file>
+<file name="hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase.java">
+<violation beginline="20" endline="20" begincolumn="17" endcolumn="42" rule="UseConcurrentHashMap" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#UseConcurrentHashMap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+<violation beginline="20" endline="20" begincolumn="44" endcolumn="51" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" variable="database" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'database' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="22" endline="22" begincolumn="32" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" variable="lines" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'lines' is not assigned and could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="22" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" variable="line" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'line' could be declared final
+</violation>
+<violation beginline="28" endline="29" begincolumn="50" endcolumn="63" rule="AvoidInstantiatingObjectsInLoops" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops" priority="3">
+Avoid instantiating new objects inside loops
+</violation>
+<violation beginline="42" endline="42" begincolumn="39" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="forJMBAG" variable="jmbag" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'jmbag' is not assigned and could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="forJMBAG" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="56" endline="59" begincolumn="29" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="filter" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'student' (lines '56'-'59').
+</violation>
+<violation beginline="56" endline="56" begincolumn="43" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="filter" variable="filter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'filter' is not assigned and could be declared final
+</violation>
+<violation beginline="57" endline="57" begincolumn="17" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="filter" variable="newStudentList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newStudentList' could be declared final
+</violation>
+<violation beginline="58" endline="58" begincolumn="22" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="filter" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'student' could be declared final
+</violation>
+<violation beginline="73" endline="76" begincolumn="29" endcolumn="73" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="getLongestName" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'student' (lines '73'-'76').
+</violation>
+<violation beginline="73" endline="73" begincolumn="35" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="getLongestName" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'list' is not assigned and could be declared final
+</violation>
+<violation beginline="75" endline="75" begincolumn="22" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="getLongestName" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'student' could be declared final
+</violation>
+<violation beginline="90" endline="93" begincolumn="29" endcolumn="72" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="getLongestLastName" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'student' (lines '90'-'93').
+</violation>
+<violation beginline="90" endline="90" begincolumn="39" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="getLongestLastName" variable="list" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'list' is not assigned and could be declared final
+</violation>
+<violation beginline="92" endline="92" begincolumn="22" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentDatabase" method="getLongestLastName" variable="student" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'student' could be declared final
+</violation>
+</file>
+<file name="hr\fer\zemris\java\tecaj\hw4\db\StudentRecord.java">
+<violation beginline="16" endline="16" begincolumn="24" endcolumn="28" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" variable="jmbag" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'jmbag' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="17" endline="17" begincolumn="24" endcolumn="31" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" variable="lastName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'lastName' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="18" endline="18" begincolumn="24" endcolumn="32" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" variable="firstName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField" priority="3">
+Private field 'firstName' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="21" endline="21" begincolumn="61" endcolumn="76" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" variable="firstName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'firstName' is not assigned and could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="30" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" variable="jmbag" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'jmbag' is not assigned and could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="44" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" variable="lastName" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'lastName' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="25" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" variable="finalGrade" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'finalGrade' is not assigned and could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="17" endcolumn="36" rule="AvoidFinalLocalVariable" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="hashCode" variable="prime" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidFinalLocalVariable" priority="3">
+Avoid using final local variables, turn them into fields
+</violation>
+<violation beginline="45" endline="46" begincolumn="17" endcolumn="82" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="hashCode" variable="result" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'result' (lines '45'-'46').
+</violation>
+<violation beginline="56" endline="56" begincolumn="31" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" variable="obj" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'obj' is not assigned and could be declared final
+</violation>
+<violation beginline="57" endline="58" begincolumn="17" endcolumn="36" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="58" endline="58" begincolumn="25" endcolumn="36" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="59" endline="60" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="60" endline="60" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="61" endline="62" begincolumn="17" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="62" endline="62" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="63" endline="63" begincolumn="17" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" variable="other" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'other' could be declared final
+</violation>
+<violation beginline="65" endline="66" begincolumn="25" endcolumn="45" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="66" endline="66" begincolumn="33" endcolumn="45" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="67" endline="68" begincolumn="24" endcolumn="37" rule="IfStmtsMustUseBraces" ruleset="Braces" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces" priority="3">
+Avoid using if statements without curly braces
+</violation>
+<violation beginline="68" endline="68" begincolumn="25" endcolumn="37" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="equals" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="83" endline="83" begincolumn="35" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="setFinalGrade" variable="finalGrade" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'finalGrade' is not assigned and could be declared final
+</violation>
+<violation beginline="109" endline="109" begincolumn="44" endcolumn="44" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="compareTo" variable="o" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="109" endline="109" begincolumn="30" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="compareTo" variable="o" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="48" endcolumn="48" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="compareTo" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="111" endline="111" begincolumn="25" endcolumn="33" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw4.db" class="StudentRecord" method="compareTo" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="test\AboveAverage.java">
+<violation beginline="18" endline="57" begincolumn="27" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="test" class="AboveAverage" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="20" endline="45" begincolumn="29" endcolumn="82" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="test" class="AboveAverage" method="main" variable="number" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'number' (lines '20'-'45').
+</violation>
+<violation beginline="20" endline="53" begincolumn="25" endcolumn="50" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="test" class="AboveAverage" method="main" variable="number" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'number' (lines '20'-'53').
+</violation>
+<violation beginline="20" endline="20" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="test" class="AboveAverage" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="AboveAverage" method="main" variable="numbers" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'numbers' could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="40" endcolumn="41" rule="ShortVariable" ruleset="Naming" package="test" class="AboveAverage" method="main" variable="br" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like br
+</violation>
+<violation beginline="25" endline="26" begincolumn="25" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="AboveAverage" method="main" variable="br" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'br' could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="32" endcolumn="62" rule="AssignmentInOperand" ruleset="Controversial" package="test" class="AboveAverage" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AssignmentInOperand" priority="3">
+Avoid assignments in operands
+</violation>
+<violation beginline="30" endline="55" begincolumn="32" endcolumn="62" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="test" class="AboveAverage" method="main" variable="input" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'input' (lines '30'-'55').
+</violation>
+<violation beginline="31" endline="31" begincolumn="37" endcolumn="56" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="test" class="AboveAverage" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="42" endline="42" begincolumn="17" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="AboveAverage" method="main" variable="avg" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'avg' could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="17" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="AboveAverage" method="main" variable="newList" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newList' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="22" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="AboveAverage" method="main" variable="number" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'number' could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="22" endcolumn="34" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="AboveAverage" method="main" variable="number" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'number' could be declared final
+</violation>
+</file>
+<file name="test\NamesCounter.java">
+<violation beginline="18" endline="51" begincolumn="27" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="test" class="NamesCounter" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="20" endline="46" begincolumn="25" endcolumn="73" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="test" class="NamesCounter" method="main" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'name' (lines '20'-'46').
+</violation>
+<violation beginline="20" endline="20" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="test" class="NamesCounter" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="36" rule="UseConcurrentHashMap" ruleset="Controversial" package="test" class="NamesCounter" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#UseConcurrentHashMap" priority="3">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</violation>
+<violation beginline="22" endline="22" begincolumn="17" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="NamesCounter" method="main" variable="names" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'names' could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="40" endcolumn="41" rule="ShortVariable" ruleset="Naming" package="test" class="NamesCounter" method="main" variable="br" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like br
+</violation>
+<violation beginline="25" endline="26" begincolumn="25" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="NamesCounter" method="main" variable="br" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'br' could be declared final
+</violation>
+<violation beginline="30" endline="30" begincolumn="32" endcolumn="62" rule="AssignmentInOperand" ruleset="Controversial" package="test" class="NamesCounter" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AssignmentInOperand" priority="3">
+Avoid assignments in operands
+</violation>
+<violation beginline="30" endline="49" begincolumn="32" endcolumn="62" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="test" class="NamesCounter" method="main" variable="input" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'input' (lines '30'-'49').
+</violation>
+<violation beginline="31" endline="31" begincolumn="37" endcolumn="56" rule="PositionLiteralsFirstInComparisons" ruleset="Design" package="test" class="NamesCounter" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#PositionLiteralsFirstInComparisons" priority="3">
+Position literals first in String comparisons
+</violation>
+<violation beginline="37" endline="37" begincolumn="41" endcolumn="60" rule="IfElseStmtsMustUseBraces" ruleset="Braces" package="test" class="NamesCounter" method="main" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfElseStmtsMustUseBraces" priority="3">
+Avoid using if...else statements without curly braces
+</violation>
+<violation beginline="45" endline="45" begincolumn="22" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="NamesCounter" method="main" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'name' could be declared final
+</violation>
+</file>
+<file name="test\Primjer1.java">
+<violation beginline="9" endline="28" begincolumn="23" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="test" class="Primjer1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="10" endline="19" begincolumn="25" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="test" class="Primjer1" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'i' (lines '10'-'19').
+</violation>
+<violation beginline="10" endline="10" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="varA" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varA' could be declared final
+</violation>
+<violation beginline="12" endline="12" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="varB" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varB' could be declared final
+</violation>
+<violation beginline="13" endline="13" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="varC" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varC' could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="33" endcolumn="34" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer1" method="main" variable="f1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like f1
+</violation>
+<violation beginline="15" endline="16" begincolumn="17" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="f1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'f1' could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer1" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="18" endline="18" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer1" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="21" endline="21" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer1" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="24" endline="24" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer1" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+</file>
+<file name="test\Primjer3.java">
+<violation beginline="10" endline="34" begincolumn="23" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="test" class="Primjer3" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="12" endline="23" begincolumn="25" endcolumn="64" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="test" class="Primjer3" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'i' (lines '12'-'23').
+</violation>
+<violation beginline="12" endline="12" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="14" endline="14" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="varA" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varA' could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="varB" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varB' could be declared final
+</violation>
+<violation beginline="16" endline="16" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="varC" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varC' could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="33" endcolumn="34" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer3" method="main" variable="f1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like f1
+</violation>
+<violation beginline="18" endline="19" begincolumn="17" endcolumn="96" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="f1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'f1' could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer3" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="22" endline="22" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer3" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="25" endline="25" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="test" class="Primjer3" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like i
+</violation>
+<violation beginline="28" endline="28" begincolumn="22" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Primjer3" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+</file>
+<file name="test\Problem1.java">
+<violation beginline="10" endline="30" begincolumn="23" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="test" class="Problem1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="11" endline="11" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="test" class="Problem1" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="14" endline="14" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Problem1" method="main" variable="varA" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varA' could be declared final
+</violation>
+<violation beginline="16" endline="16" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Problem1" method="main" variable="varB" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varB' could be declared final
+</violation>
+<violation beginline="17" endline="17" begincolumn="17" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Problem1" method="main" variable="varC" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'varC' could be declared final
+</violation>
+<violation beginline="20" endline="24" begincolumn="17" endcolumn="17" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="test" class="Problem1" method="main" variable="izraz1" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'izraz1' could be declared final
+</violation>
+</file>
+</pmd>

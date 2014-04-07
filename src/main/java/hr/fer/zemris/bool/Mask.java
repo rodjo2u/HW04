@@ -205,6 +205,21 @@ public class Mask {
 		return numberOfOnes;
 	}
 
+	/**
+	 * Returns the number of MaskValue.DONT_CARE values in Mask instance.
+	 * 
+	 * @return number of DONT_CARE values
+	 */
+	public int getNumberOfDontCares() {
+		int numberOfDontCares = 0;
+		for (MaskValue value : maskValues) {
+			if (value.equals(MaskValue.DONT_CARE)) {
+				numberOfDontCares++;
+			}
+		}
+		return numberOfDontCares;
+	}
+
 	public int getSize() {
 		return maskValues.length;
 	}
@@ -261,4 +276,22 @@ public class Mask {
 		return prefix + originalString;
 	}
 
+	@Override
+	public String toString() {
+		String result = "";
+		for(int i=0; i<maskValues.length; i++) {
+			switch(maskValues[i]) {
+				case ZERO :
+					result = result.concat("0");
+					break;
+				case ONE :
+					result = result.concat("1");
+					break;
+				case DONT_CARE :
+					result = result.concat("x");
+					break;
+			}
+		}
+		return result;
+	}
 }

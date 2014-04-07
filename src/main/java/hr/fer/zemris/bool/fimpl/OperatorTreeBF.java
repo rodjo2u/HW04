@@ -1,12 +1,13 @@
 package hr.fer.zemris.bool.fimpl;
 
+import hr.fer.zemris.bool.BooleanFunction;
 import hr.fer.zemris.bool.BooleanOperator;
 import hr.fer.zemris.bool.BooleanValue;
 import hr.fer.zemris.bool.BooleanVariable;
 
 import java.util.List;
 
-public class OperatorTreeBF {
+public class OperatorTreeBF implements BooleanFunction {
 
 	private String name;
 	private List<BooleanVariable> domain;

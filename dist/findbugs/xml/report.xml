@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.3" sequence="0" timestamp="1396849880276" analysisTimestamp="1396849880319" release="">
+  <Project projectName="HW04-0036441995">
+    <Jar>D:\ZEclipseProjects\HW04-0036441995\build\classes</Jar>
+    <SrcDir>D:\ZEclipseProjects\HW04-0036441995\src\main\java</SrcDir>
+  </Project>
+  <BugInstance type="EC_BAD_ARRAY_COMPARE" priority="2" abbrev="EC" category="CORRECTNESS" instanceHash="7d1631b041d437b49f6a65d088e93005" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="3">
+    <ShortMessage>Invocation of equals() on an array, which is equivalent to ==</ShortMessage>
+    <LongMessage>Using .equals to compare two hr.fer.zemris.bool.MaskValue[]&apos;s, (equivalent to ==) in hr.fer.zemris.bool.Mask.isMoreGeneralThan(Mask)</LongMessage>
+    <Class classname="hr.fer.zemris.bool.Mask" primary="true">
+      <SourceLine classname="hr.fer.zemris.bool.Mask" start="22" end="295" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java">
+        <Message>At Mask.java:[lines 22-295]</Message>
+      </SourceLine>
+      <Message>In class hr.fer.zemris.bool.Mask</Message>
+    </Class>
+    <Method classname="hr.fer.zemris.bool.Mask" name="isMoreGeneralThan" signature="(Lhr/fer/zemris/bool/Mask;)Z" isStatic="false" primary="true">
+      <SourceLine classname="hr.fer.zemris.bool.Mask" start="85" end="112" startBytecode="0" endBytecode="58" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java"/>
+      <Message>In method hr.fer.zemris.bool.Mask.isMoreGeneralThan(Mask)</Message>
+    </Method>
+    <Type descriptor="[Lhr/fer/zemris/bool/MaskValue;" role="TYPE_FOUND">
+      <Message>Actual type hr.fer.zemris.bool.MaskValue[]</Message>
+    </Type>
+    <Type descriptor="[Lhr/fer/zemris/bool/MaskValue;" role="TYPE_EXPECTED">
+      <Message>Expected hr.fer.zemris.bool.MaskValue[]</Message>
+    </Type>
+    <Field classname="hr.fer.zemris.bool.Mask" name="maskValues" signature="[Lhr/fer/zemris/bool/MaskValue;" isStatic="false" primary="true" role="FIELD_VALUE_OF">
+      <SourceLine classname="hr.fer.zemris.bool.Mask" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java">
+        <Message>In Mask.java</Message>
+      </SourceLine>
+      <Message>Value loaded from field hr.fer.zemris.bool.Mask.maskValues</Message>
+    </Field>
+    <SourceLine classname="hr.fer.zemris.bool.Mask" primary="true" start="108" end="108" startBytecode="129" endBytecode="129" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java">
+      <Message>At Mask.java:[line 108]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" abbrev="EI2" category="MALICIOUS_CODE" instanceHash="64eff662ca02e96c68433fcf8973f254" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18" cweid="374">
+    <ShortMessage>May expose internal representation by incorporating reference to mutable object</ShortMessage>
+    <LongMessage>new hr.fer.zemris.bool.Mask(MaskValue[]) may expose internal representation by storing an externally mutable object into Mask.maskValues</LongMessage>
+    <Class classname="hr.fer.zemris.bool.Mask" primary="true">
+      <SourceLine classname="hr.fer.zemris.bool.Mask" start="22" end="295" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java">
+        <Message>At Mask.java:[lines 22-295]</Message>
+      </SourceLine>
+      <Message>In class hr.fer.zemris.bool.Mask</Message>
+    </Class>
+    <Method classname="hr.fer.zemris.bool.Mask" name="&lt;init&gt;" signature="([Lhr/fer/zemris/bool/MaskValue;)V" isStatic="false" primary="true">
+      <SourceLine classname="hr.fer.zemris.bool.Mask" start="22" end="24" startBytecode="0" endBytecode="69" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java"/>
+      <Message>In method new hr.fer.zemris.bool.Mask(MaskValue[])</Message>
+    </Method>
+    <Field classname="hr.fer.zemris.bool.Mask" name="maskValues" signature="[Lhr/fer/zemris/bool/MaskValue;" isStatic="false" primary="true">
+      <SourceLine classname="hr.fer.zemris.bool.Mask" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java">
+        <Message>In Mask.java</Message>
+      </SourceLine>
+      <Message>Field hr.fer.zemris.bool.Mask.maskValues</Message>
+    </Field>
+    <LocalVariable name="maskValues" register="1" pc="6" role="LOCAL_VARIABLE_NAMED">
+      <Message>Local variable named maskValues</Message>
+    </LocalVariable>
+    <SourceLine classname="hr.fer.zemris.bool.Mask" primary="true" start="23" end="23" startBytecode="6" endBytecode="6" sourcefile="Mask.java" sourcepath="hr/fer/zemris/bool/Mask.java" relSourcepath="hr\fer\zemris\bool\Mask.java">
+      <Message>At Mask.java:[line 23]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" instanceHash="8ebd67d2d48c29807e273fe7f7452ddb" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Unread field</ShortMessage>
+    <LongMessage>Unread field: hr.fer.zemris.bool.fimpl.OperatorTreeBF.operatorTree</LongMessage>
+    <Class classname="hr.fer.zemris.bool.fimpl.OperatorTreeBF" primary="true">
+      <SourceLine classname="hr.fer.zemris.bool.fimpl.OperatorTreeBF" start="17" end="37" sourcefile="OperatorTreeBF.java" sourcepath="hr/fer/zemris/bool/fimpl/OperatorTreeBF.java" relSourcepath="hr\fer\zemris\bool\fimpl\OperatorTreeBF.java">
+        <Message>At OperatorTreeBF.java:[lines 17-37]</Message>
+      </SourceLine>
+      <Message>In class hr.fer.zemris.bool.fimpl.OperatorTreeBF</Message>
+    </Class>
+    <Field classname="hr.fer.zemris.bool.fimpl.OperatorTreeBF" name="operatorTree" signature="Lhr/fer/zemris/bool/BooleanOperator;" isStatic="false" primary="true">
+      <SourceLine classname="hr.fer.zemris.bool.fimpl.OperatorTreeBF" sourcefile="OperatorTreeBF.java" sourcepath="hr/fer/zemris/bool/fimpl/OperatorTreeBF.java" relSourcepath="hr\fer\zemris\bool\fimpl\OperatorTreeBF.java">
+        <Message>In OperatorTreeBF.java</Message>
+      </SourceLine>
+      <Message>Field hr.fer.zemris.bool.fimpl.OperatorTreeBF.operatorTree</Message>
+    </Field>
+    <SourceLine classname="hr.fer.zemris.bool.fimpl.OperatorTreeBF" primary="true" start="20" end="20" startBytecode="16" endBytecode="16" sourcefile="OperatorTreeBF.java" sourcepath="hr/fer/zemris/bool/fimpl/OperatorTreeBF.java" relSourcepath="hr\fer\zemris\bool\fimpl\OperatorTreeBF.java">
+      <Message>At OperatorTreeBF.java:[line 20]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" instanceHash="aa27622ad40bd594c5db921e6cc70cb5" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="19">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in hr.fer.zemris.java.tecaj.hw4.db.StudentDB.waitForQueries(): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="hr.fer.zemris.java.tecaj.hw4.db.StudentDB" primary="true">
+      <SourceLine classname="hr.fer.zemris.java.tecaj.hw4.db.StudentDB" start="24" end="177" sourcefile="StudentDB.java" sourcepath="hr/fer/zemris/java/tecaj/hw4/db/StudentDB.java" relSourcepath="hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java">
+        <Message>At StudentDB.java:[lines 24-177]</Message>
+      </SourceLine>
+      <Message>In class hr.fer.zemris.java.tecaj.hw4.db.StudentDB</Message>
+    </Class>
+    <Method classname="hr.fer.zemris.java.tecaj.hw4.db.StudentDB" name="waitForQueries" signature="()V" isStatic="true" primary="true">
+      <SourceLine classname="hr.fer.zemris.java.tecaj.hw4.db.StudentDB" start="57" end="93" startBytecode="0" endBytecode="335" sourcefile="StudentDB.java" sourcepath="hr/fer/zemris/java/tecaj/hw4/db/StudentDB.java" relSourcepath="hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+      <Message>In method hr.fer.zemris.java.tecaj.hw4.db.StudentDB.waitForQueries()</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="hr.fer.zemris.java.tecaj.hw4.db.StudentDB" primary="true" start="57" end="57" startBytecode="11" endBytecode="11" sourcefile="StudentDB.java" sourcepath="hr/fer/zemris/java/tecaj/hw4/db/StudentDB.java" relSourcepath="hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java">
+      <Message>At StudentDB.java:[line 57]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" instanceHash="402003742a36ddf8bdb610cd45ed75f3" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="19">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in test.AboveAverage.main(String[]): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="test.AboveAverage" primary="true">
+      <SourceLine classname="test.AboveAverage" start="18" end="55" sourcefile="AboveAverage.java" sourcepath="test/AboveAverage.java" relSourcepath="test\AboveAverage.java">
+        <Message>At AboveAverage.java:[lines 18-55]</Message>
+      </SourceLine>
+      <Message>In class test.AboveAverage</Message>
+    </Class>
+    <Method classname="test.AboveAverage" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="test.AboveAverage" start="22" end="55" startBytecode="0" endBytecode="603" sourcefile="AboveAverage.java" sourcepath="test/AboveAverage.java" relSourcepath="test\AboveAverage.java"/>
+      <Message>In method test.AboveAverage.main(String[])</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="test.AboveAverage" primary="true" start="25" end="25" startBytecode="21" endBytecode="21" sourcefile="AboveAverage.java" sourcepath="test/AboveAverage.java" relSourcepath="test\AboveAverage.java">
+      <Message>At AboveAverage.java:[line 25]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" instanceHash="10c0d3e379fd65a87e46ca23d99046ce" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="19">
+    <ShortMessage>Reliance on default encoding</ShortMessage>
+    <LongMessage>Found reliance on default encoding in test.NamesCounter.main(String[]): new java.io.InputStreamReader(InputStream)</LongMessage>
+    <Class classname="test.NamesCounter" primary="true">
+      <SourceLine classname="test.NamesCounter" start="18" end="49" sourcefile="NamesCounter.java" sourcepath="test/NamesCounter.java" relSourcepath="test\NamesCounter.java">
+        <Message>At NamesCounter.java:[lines 18-49]</Message>
+      </SourceLine>
+      <Message>In class test.NamesCounter</Message>
+    </Class>
+    <Method classname="test.NamesCounter" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="test.NamesCounter" start="22" end="49" startBytecode="0" endBytecode="415" sourcefile="NamesCounter.java" sourcepath="test/NamesCounter.java" relSourcepath="test\NamesCounter.java"/>
+      <Message>In method test.NamesCounter.main(String[])</Message>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+      <Message>Called method new java.io.InputStreamReader(InputStream)</Message>
+    </Method>
+    <SourceLine classname="test.NamesCounter" primary="true" start="25" end="25" startBytecode="19" endBytecode="19" sourcefile="NamesCounter.java" sourcepath="test/NamesCounter.java" relSourcepath="test\NamesCounter.java">
+      <Message>At NamesCounter.java:[line 25]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" abbrev="WMI" category="PERFORMANCE" instanceHash="3db38fae8a7445e8f64b4f84205ef3c9" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage>Inefficient use of keySet iterator instead of entrySet iterator</ShortMessage>
+    <LongMessage>test.NamesCounter.main(String[]) makes inefficient use of keySet iterator instead of entrySet iterator</LongMessage>
+    <Class classname="test.NamesCounter" primary="true">
+      <SourceLine classname="test.NamesCounter" start="18" end="49" sourcefile="NamesCounter.java" sourcepath="test/NamesCounter.java" relSourcepath="test\NamesCounter.java">
+        <Message>At NamesCounter.java:[lines 18-49]</Message>
+      </SourceLine>
+      <Message>In class test.NamesCounter</Message>
+    </Class>
+    <Method classname="test.NamesCounter" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="test.NamesCounter" start="22" end="49" startBytecode="0" endBytecode="415" sourcefile="NamesCounter.java" sourcepath="test/NamesCounter.java" relSourcepath="test\NamesCounter.java"/>
+      <Message>In method test.NamesCounter.main(String[])</Message>
+    </Method>
+    <SourceLine classname="test.NamesCounter" primary="true" start="46" end="46" startBytecode="169" endBytecode="169" sourcefile="NamesCounter.java" sourcepath="test/NamesCounter.java" relSourcepath="test\NamesCounter.java">
+      <Message>At NamesCounter.java:[line 46]</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="MALICIOUS_CODE">
+    <Description>Malicious code vulnerability</Description>
+  </BugCategory>
+  <BugCategory category="CORRECTNESS">
+    <Description>Correctness</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription>Reliance on default encoding</ShortDescription>
+    <Details><![CDATA[
+
+<p> Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. This will cause the application behaviour to vary between platforms. Use an alternative API and specify a charset name or Charset object explicitly.  </p>
+
+      ]]></Details>
+  </BugPattern>
+  <BugPattern type="EI_EXPOSE_REP2" abbrev="EI2" category="MALICIOUS_CODE" cweid="374">
+    <ShortDescription>May expose internal representation by incorporating reference to mutable object</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="URF_UNREAD_FIELD" abbrev="UrF" category="PERFORMANCE">
+    <ShortDescription>Unread field</ShortDescription>
+    <Details><![CDATA[
+
+  <p> This field is never read.&nbsp; Consider removing it from the class.</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugPattern type="WMI_WRONG_MAP_ITERATOR" abbrev="WMI" category="PERFORMANCE">
+    <ShortDescription>Inefficient use of keySet iterator instead of entrySet iterator</ShortDescription>
+    <Details><![CDATA[
+
+<p> This method accesses the value of a Map entry, using a key that was retrieved from
+a keySet iterator. It is more efficient to use an iterator on the entrySet of the map, to avoid the
+Map.get(key) lookup.</p>
+
+        ]]></Details>
+  </BugPattern>
+  <BugPattern type="EC_BAD_ARRAY_COMPARE" abbrev="EC" category="CORRECTNESS">
+    <ShortDescription>Invocation of equals() on an array, which is equivalent to ==</ShortDescription>
+    <Details><![CDATA[
+
+<p>
+This method invokes the .equals(Object o) method on an array. Since arrays do not override the equals
+method of Object, calling equals on an array is the same as comparing their addresses. To compare the
+contents of the arrays, use <code>java.util.Arrays.equals(Object[], Object[])</code>.
+To compare the addresses of the arrays, it would be
+less confusing to explicitly check pointer equality using <code>==</code>.
+</p>
+
+    ]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="WMI">
+    <Description>Inefficient Map Iterator</Description>
+  </BugCode>
+  <BugCode abbrev="UrF">
+    <Description>Unread field</Description>
+  </BugCode>
+  <BugCode abbrev="EC">
+    <Description>Comparing incompatible types for equality</Description>
+  </BugCode>
+  <BugCode abbrev="EI2">
+    <Description>Storing reference to mutable object</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 7 Apr 2014 07:51:20 +0200" total_classes="33" referenced_classes="82" total_bugs="7" total_size="714" num_packages="5" vm_version="24.45-b08" cpu_seconds="17.50" clock_seconds="9.69" peak_mbytes="134.56" alloc_mbytes="903.00" gc_seconds="0.17" priority_2="4" priority_1="3">
+    <FileStats path="hr/fer/zemris/bool/BooleanConstant.java" bugCount="0" size="15"/>
+    <FileStats path="hr/fer/zemris/bool/BooleanFunction.java" bugCount="0" size="7"/>
+    <FileStats path="hr/fer/zemris/bool/BooleanOperator.java" bugCount="0" size="14"/>
+    <FileStats path="hr/fer/zemris/bool/BooleanSource.java" bugCount="0" size="3"/>
+    <FileStats path="hr/fer/zemris/bool/BooleanValue.java" bugCount="0" size="11"/>
+    <FileStats path="hr/fer/zemris/bool/BooleanVariable.java" bugCount="0" size="19"/>
+    <FileStats path="hr/fer/zemris/bool/Mask.java" bugCount="2" size="120" bugHash="c99128f4fd5b9add7e55d2f1362f1f2d"/>
+    <FileStats path="hr/fer/zemris/bool/MaskValue.java" bugCount="0" size="11"/>
+    <FileStats path="hr/fer/zemris/bool/Masks.java" bugCount="0" size="14"/>
+    <FileStats path="hr/fer/zemris/bool/NamedBooleanSource.java" bugCount="0" size="2"/>
+    <FileStats path="hr/fer/zemris/bool/fimpl/IndexedBF.java" bugCount="0" size="101"/>
+    <FileStats path="hr/fer/zemris/bool/fimpl/MaskBasedBF.java" bugCount="0" size="61"/>
+    <FileStats path="hr/fer/zemris/bool/fimpl/OperatorTreeBF.java" bugCount="1" size="16" bugHash="e58b952d32765535d1fb04a447908e9d"/>
+    <FileStats path="hr/fer/zemris/bool/opimpl/BooleanOperatorAND.java" bugCount="0" size="15"/>
+    <FileStats path="hr/fer/zemris/bool/opimpl/BooleanOperatorNOT.java" bugCount="0" size="12"/>
+    <FileStats path="hr/fer/zemris/bool/opimpl/BooleanOperatorOR.java" bugCount="0" size="15"/>
+    <FileStats path="hr/fer/zemris/bool/opimpl/BooleanOperators.java" bugCount="0" size="10"/>
+    <FileStats path="hr/fer/zemris/bool/package-info.java" bugCount="0" size="1"/>
+    <FileStats path="hr/fer/zemris/java/tecaj/hw4/db/IFilter.java" bugCount="0" size="2"/>
+    <FileStats path="hr/fer/zemris/java/tecaj/hw4/db/LastNameFilter.java" bugCount="0" size="12"/>
+    <FileStats path="hr/fer/zemris/java/tecaj/hw4/db/StudentDB.java" bugCount="1" size="72" bugHash="fcdecb25e3e73779c8c79d23613a43ae"/>
+    <FileStats path="hr/fer/zemris/java/tecaj/hw4/db/StudentDatabase.java" bugCount="0" size="35"/>
+    <FileStats path="hr/fer/zemris/java/tecaj/hw4/db/StudentRecord.java" bugCount="0" size="50"/>
+    <FileStats path="hr/fer/zemris/java/tecaj/hw4/db/package-info.java" bugCount="0" size="1"/>
+    <FileStats path="test/AboveAverage.java" bugCount="1" size="27" bugHash="7e999f96d85b6180267ff65a47b94994"/>
+    <FileStats path="test/NamesCounter.java" bugCount="2" size="20" bugHash="43fae961c1ce32d69a817fb624158e3d"/>
+    <FileStats path="test/Primjer1.java" bugCount="0" size="18"/>
+    <FileStats path="test/Primjer3.java" bugCount="0" size="18"/>
+    <FileStats path="test/Problem1.java" bugCount="0" size="12"/>
+    <PackageStats package="hr.fer.zemris.bool" total_bugs="2" total_types="12" total_size="217" priority_2="2">
+      <ClassStats class="hr.fer.zemris.bool.BooleanConstant" sourceFile="BooleanConstant.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.BooleanFunction" sourceFile="BooleanFunction.java" interface="true" size="7" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.BooleanOperator" sourceFile="BooleanOperator.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.BooleanSource" sourceFile="BooleanSource.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.BooleanValue" sourceFile="BooleanValue.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.BooleanVariable" sourceFile="BooleanVariable.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.Mask" sourceFile="Mask.java" interface="false" size="116" bugs="2" priority_2="2"/>
+      <ClassStats class="hr.fer.zemris.bool.Mask$1" sourceFile="Mask.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.MaskValue" sourceFile="MaskValue.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.Masks" sourceFile="Masks.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.NamedBooleanSource" sourceFile="NamedBooleanSource.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="hr.fer.zemris.bool.fimpl" total_bugs="1" total_types="6" total_size="178" priority_2="1">
+      <ClassStats class="hr.fer.zemris.bool.fimpl.IndexedBF" sourceFile="IndexedBF.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.fimpl.IndexedBF$1" sourceFile="IndexedBF.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.fimpl.IndexedBF$MaxtermIterator" sourceFile="IndexedBF.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.fimpl.IndexedBF$MintermIterator" sourceFile="IndexedBF.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.fimpl.MaskBasedBF" sourceFile="MaskBasedBF.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.fimpl.OperatorTreeBF" sourceFile="OperatorTreeBF.java" interface="false" size="16" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <PackageStats package="hr.fer.zemris.bool.opimpl" total_bugs="0" total_types="4" total_size="52">
+      <ClassStats class="hr.fer.zemris.bool.opimpl.BooleanOperatorAND" sourceFile="BooleanOperatorAND.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.opimpl.BooleanOperatorNOT" sourceFile="BooleanOperatorNOT.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.opimpl.BooleanOperatorOR" sourceFile="BooleanOperatorOR.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.bool.opimpl.BooleanOperators" sourceFile="BooleanOperators.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="hr.fer.zemris.java.tecaj.hw4.db" total_bugs="1" total_types="6" total_size="172" priority_1="1">
+      <ClassStats class="hr.fer.zemris.java.tecaj.hw4.db.IFilter" sourceFile="IFilter.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.java.tecaj.hw4.db.LastNameFilter" sourceFile="LastNameFilter.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.java.tecaj.hw4.db.StudentDB" sourceFile="StudentDB.java" interface="false" size="72" bugs="1" priority_1="1"/>
+      <ClassStats class="hr.fer.zemris.java.tecaj.hw4.db.StudentDatabase" sourceFile="StudentDatabase.java" interface="false" size="35" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.java.tecaj.hw4.db.StudentRecord" sourceFile="StudentRecord.java" interface="false" size="50" bugs="0"/>
+      <ClassStats class="hr.fer.zemris.java.tecaj.hw4.db.package-info" sourceFile="package-info.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="test" total_bugs="3" total_types="5" total_size="95" priority_2="1" priority_1="2">
+      <ClassStats class="test.AboveAverage" sourceFile="AboveAverage.java" interface="false" size="27" bugs="1" priority_1="1"/>
+      <ClassStats class="test.NamesCounter" sourceFile="NamesCounter.java" interface="false" size="20" bugs="2" priority_2="1" priority_1="1"/>
+      <ClassStats class="test.Primjer1" sourceFile="Primjer1.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="test.Primjer3" sourceFile="Primjer3.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="test.Problem1" sourceFile="Problem1.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1030" invocations="571" avgMicrosecondsPerInvocation="1804" maxMicrosecondsPerInvocation="90927" standardDeviationMircosecondsPerInvocation="7097"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="907" invocations="82" avgMicrosecondsPerInvocation="11061" maxMicrosecondsPerInvocation="578718" standardDeviationMircosecondsPerInvocation="63734"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="766" invocations="127" avgMicrosecondsPerInvocation="6038" maxMicrosecondsPerInvocation="539829" standardDeviationMircosecondsPerInvocation="47646"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="443" invocations="388" avgMicrosecondsPerInvocation="1143" maxMicrosecondsPerInvocation="64184" standardDeviationMircosecondsPerInvocation="4622"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="366" invocations="82" avgMicrosecondsPerInvocation="4472" maxMicrosecondsPerInvocation="245379" standardDeviationMircosecondsPerInvocation="27053"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="335" invocations="129" avgMicrosecondsPerInvocation="2602" maxMicrosecondsPerInvocation="100596" standardDeviationMircosecondsPerInvocation="9231"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="328" invocations="126" avgMicrosecondsPerInvocation="2606" maxMicrosecondsPerInvocation="91847" standardDeviationMircosecondsPerInvocation="8785"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="294" invocations="536" avgMicrosecondsPerInvocation="549" maxMicrosecondsPerInvocation="124331" standardDeviationMircosecondsPerInvocation="5517"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="290" invocations="132" avgMicrosecondsPerInvocation="2197" maxMicrosecondsPerInvocation="76739" standardDeviationMircosecondsPerInvocation="7623"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="273" invocations="134" avgMicrosecondsPerInvocation="2040" maxMicrosecondsPerInvocation="53472" standardDeviationMircosecondsPerInvocation="5856"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="267" invocations="574" avgMicrosecondsPerInvocation="465" maxMicrosecondsPerInvocation="16275" standardDeviationMircosecondsPerInvocation="808"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="182" invocations="129" avgMicrosecondsPerInvocation="1414" maxMicrosecondsPerInvocation="38825" standardDeviationMircosecondsPerInvocation="4425"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="180" invocations="94" avgMicrosecondsPerInvocation="1923" maxMicrosecondsPerInvocation="68935" standardDeviationMircosecondsPerInvocation="8042"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindOpenStream" totalMilliseconds="146" invocations="33" avgMicrosecondsPerInvocation="4424" maxMicrosecondsPerInvocation="121746" standardDeviationMircosecondsPerInvocation="20858"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="143" invocations="103" avgMicrosecondsPerInvocation="1389" maxMicrosecondsPerInvocation="27578" standardDeviationMircosecondsPerInvocation="3328"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

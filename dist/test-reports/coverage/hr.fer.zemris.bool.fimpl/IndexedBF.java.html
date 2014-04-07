@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>IndexedBF.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW04-0036441995</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.bool.fimpl</a> &gt; <span class="el_source">IndexedBF.java</span></div><h1>IndexedBF.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.bool.fimpl;
+
+import hr.fer.zemris.bool.BooleanFunction;
+import hr.fer.zemris.bool.BooleanValue;
+import hr.fer.zemris.bool.BooleanVariable;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
+import static java.lang.Math.pow;
+
+/**
+ * Implementation of user specific boolean function in which user submits
+ * indexes wanted boolean variable results.
+ * 
+ * @author Igor Petkovski
+ * 
+ */
+public class IndexedBF implements BooleanFunction {
+
+	private String name;
+	private List&lt;BooleanVariable&gt; domain;
+	private boolean indexesAreMinterms;
+	private List&lt;Integer&gt; indexes;
+	private List&lt;Integer&gt; dontCares;
+
+	public IndexedBF(String name, List&lt;BooleanVariable&gt; domain,
+			boolean indexesAreMinterms, List&lt;Integer&gt; indexes,
+			List&lt;Integer&gt; dontCares) {
+<span class="nc" id="L32">		super();</span>
+<span class="nc" id="L33">		this.name = name;</span>
+<span class="nc" id="L34">		this.domain = domain;</span>
+<span class="nc" id="L35">		this.indexesAreMinterms = indexesAreMinterms;</span>
+<span class="nc" id="L36">		this.indexes = indexes;</span>
+<span class="nc" id="L37">		this.dontCares = dontCares;</span>
+<span class="nc" id="L38">	}</span>
+
+	public String getName() {
+<span class="nc" id="L41">		return name;</span>
+	}
+
+	public List&lt;BooleanVariable&gt; getDomain() {
+<span class="nc" id="L45">		return domain;</span>
+	}
+
+	/**
+	 * 
+	 */
+	public boolean hasMinterm(int index) {
+<span class="nc bnc" id="L52" title="All 4 branches missed.">		if (index &lt; 1 || index &gt; pow(2d, domain.size())) {</span>
+<span class="nc" id="L53">			throw new IndexOutOfBoundsException(</span>
+					&quot;This function contains less resul values!&quot;);
+		}
+<span class="nc bnc" id="L56" title="All 4 branches missed.">		if (indexesAreMinterms &amp;&amp; indexes.contains(index)) {</span>
+<span class="nc" id="L57">			return true;</span>
+<span class="nc bnc" id="L58" title="All 4 branches missed.">		} else if (!indexesAreMinterms &amp;&amp; !indexes.contains(index)) {</span>
+<span class="nc" id="L59">			return true;</span>
+		}
+<span class="nc" id="L61">		return false;</span>
+	}
+
+	/**
+	 * Returns true if function contains Maxterm at given index.
+	 * 
+	 * @return &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;
+	 */
+	public boolean hasMaxterm(int index) {
+<span class="nc bnc" id="L70" title="All 2 branches missed.">		return !hasMinterm(index);</span>
+	}
+
+	/**
+	 * Checks if the value at the given index is DONT_CARE.
+	 * 
+	 * @param index
+	 *            - index at which to check the value
+	 * @return &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt;
+	 */
+	public boolean hasDontCare(int index) {
+<span class="nc bnc" id="L81" title="All 2 branches missed.">		if (domain.get(index).getValue().equals(BooleanValue.DONT_CARE)) {</span>
+<span class="nc" id="L82">			return true;</span>
+		}
+<span class="nc" id="L84">		return false;</span>
+	}
+
+	/**
+	 * Returns the list of DONT_CARE indexes.
+	 * 
+	 * @return List of Integer indexes of dont_care values.
+	 */
+	public Iterable&lt;Integer&gt; dontCareIterable() {
+<span class="nc" id="L93">		return dontCares;</span>
+	}
+
+	/**
+	 * Returns the list of maxterm indexes.
+	 */
+	@Override
+	public Iterable&lt;Integer&gt; maxtermIterable() {
+<span class="nc" id="L101">		Iterator&lt;Integer&gt; iterator = new MaxtermIterator();</span>
+<span class="nc" id="L102">		List&lt;Integer&gt; list = new LinkedList&lt;&gt;();</span>
+<span class="nc bnc" id="L103" title="All 2 branches missed.">		while (iterator.hasNext()) {</span>
+<span class="nc" id="L104">			list.add(iterator.next());</span>
+		}
+<span class="nc" id="L106">		return list;</span>
+	}
+
+	/**
+	 * Implements an iterator over maxterm indexes.
+	 * 
+	 * @author Igor Petkovski
+	 * 
+	 */
+	private class MaxtermIterator implements Iterator&lt;Integer&gt; {
+
+<span class="nc" id="L117">		private int current = 0;</span>
+<span class="nc" id="L118">		private List&lt;Integer&gt; newList = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L120">		private MaxtermIterator() {</span>
+<span class="nc bnc" id="L121" title="All 2 branches missed.">			if (indexesAreMinterms) {</span>
+<span class="nc bnc" id="L122" title="All 2 branches missed.">				for (int i = 0; i &lt; pow(2, domain.size()); i++) {</span>
+<span class="nc bnc" id="L123" title="All 4 branches missed.">					if (!indexes.contains(i) &amp;&amp; !dontCares.contains(i)) {</span>
+<span class="nc" id="L124">						newList.add(i);</span>
+					}
+				}
+			} else {
+<span class="nc" id="L128">				newList = indexes;</span>
+			}
+<span class="nc" id="L130">		}</span>
+
+		@Override
+		public boolean hasNext() {
+<span class="nc bnc" id="L134" title="All 2 branches missed.">			return current &lt; newList.size();</span>
+		}
+
+		@Override
+		public Integer next() {
+<span class="nc" id="L139">			return newList.get(current++);</span>
+		}
+
+		@Override
+		public void remove() {
+<span class="nc" id="L144">			throw new UnsupportedOperationException(</span>
+					&quot;You cannot remove an element from boolean function: &quot;
+							+ name);
+		}
+
+	}
+
+	/**
+	 * Returns the list of minterm indexes.
+	 * 
+	 * @return - list of Integer indexes.
+	 */
+	public Iterable&lt;Integer&gt; mintermIterable() {
+<span class="nc" id="L157">		Iterator&lt;Integer&gt; iterator = new MintermIterator();</span>
+<span class="nc" id="L158">		List&lt;Integer&gt; list = new LinkedList&lt;&gt;();</span>
+<span class="nc bnc" id="L159" title="All 2 branches missed.">		while (iterator.hasNext()) {</span>
+<span class="nc" id="L160">			list.add(iterator.next());</span>
+		}
+<span class="nc" id="L162">		return list;</span>
+	}
+
+	/**
+	 * Creates iterator over minterm indexes.
+	 * 
+	 * @author Igor Petkovski
+	 * 
+	 */
+	private class MintermIterator implements Iterator&lt;Integer&gt; {
+
+<span class="nc" id="L173">		private int current = 0;</span>
+<span class="nc" id="L174">		private List&lt;Integer&gt; newList = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L176">		private MintermIterator() {</span>
+<span class="nc bnc" id="L177" title="All 2 branches missed.">			if (!indexesAreMinterms) {</span>
+<span class="nc bnc" id="L178" title="All 2 branches missed.">				for (int i = 0; i &lt; domain.size(); i++) {</span>
+<span class="nc bnc" id="L179" title="All 4 branches missed.">					if (!indexes.contains(i) &amp;&amp; !dontCares.contains(i)) {</span>
+<span class="nc" id="L180">						newList.add(i);</span>
+					}
+				}
+			} else {
+<span class="nc" id="L184">				newList = indexes;</span>
+			}
+<span class="nc" id="L186">		}</span>
+
+		@Override
+		public boolean hasNext() {
+<span class="nc bnc" id="L190" title="All 2 branches missed.">			return current &lt; newList.size();</span>
+		}
+
+		@Override
+		public Integer next() {
+<span class="nc" id="L195">			return newList.get(current++);</span>
+		}
+
+		@Override
+		public void remove() {
+<span class="nc" id="L200">			throw new UnsupportedOperationException(</span>
+					&quot;You cannot remove an element from boolean function: &quot;
+							+ name);
+		}
+
+	}
+
+	/**
+	 * Unavailable in Function context. Value is range of minterms, maxterms and
+	 * dont_care's.
+	 */
+	@Override
+	public BooleanValue getValue() {
+<span class="nc" id="L213">		return null;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

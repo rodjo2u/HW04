@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>MaskBasedBF.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW04-0036441995</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.bool.fimpl</a> &gt; <span class="el_source">MaskBasedBF.java</span></div><h1>MaskBasedBF.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.bool.fimpl;
+
+import hr.fer.zemris.bool.BooleanFunction;
+import hr.fer.zemris.bool.BooleanValue;
+import hr.fer.zemris.bool.BooleanVariable;
+import hr.fer.zemris.bool.Mask;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class MaskBasedBF implements BooleanFunction {
+
+	private String name;
+	private List&lt;BooleanVariable&gt; domain;
+	private boolean masksAreMinterms;
+	private List&lt;Mask&gt; masks;
+	private List&lt;Mask&gt; dontCareMasks;
+
+	private IndexedBF indexedBF;
+
+	public MaskBasedBF(String name, List&lt;BooleanVariable&gt; domain,
+			boolean masksAreMinterms, List&lt;Mask&gt; masks, List&lt;Mask&gt; dontCareMasks) {
+<span class="nc" id="L23">		super();</span>
+<span class="nc" id="L24">		this.name = name;</span>
+<span class="nc" id="L25">		this.domain = domain;</span>
+<span class="nc" id="L26">		this.masksAreMinterms = masksAreMinterms;</span>
+<span class="nc" id="L27">		this.masks = masks;</span>
+<span class="nc" id="L28">		this.dontCareMasks = dontCareMasks;</span>
+<span class="nc" id="L29">		initialize();</span>
+<span class="nc" id="L30">	}</span>
+
+	@Override
+	public String getName() {
+<span class="nc" id="L34">		return name;</span>
+	}
+
+	@Override
+	public List&lt;BooleanVariable&gt; getDomain() {
+<span class="nc" id="L39">		return domain;</span>
+	}
+
+	/**
+	 * Unavailable in Function context. Value is range of minterms, maxterms and
+	 * dont_care's.
+	 */
+	@Override
+	public BooleanValue getValue() {
+<span class="nc" id="L48">		return null;</span>
+	}
+
+	@Override
+	public boolean hasMinterm(int index) {
+<span class="nc" id="L53">		return indexedBF.hasMinterm(index);</span>
+	}
+
+	@Override
+	public boolean hasMaxterm(int index) {
+<span class="nc" id="L58">		return indexedBF.hasMaxterm(index);</span>
+	}
+
+	@Override
+	public boolean hasDontCare(int index) {
+<span class="nc" id="L63">		return indexedBF.hasDontCare(index);</span>
+	}
+
+	@Override
+	public Iterable&lt;Integer&gt; mintermIterable() {
+<span class="nc" id="L68">		return indexedBF.mintermIterable();</span>
+	}
+
+	@Override
+	public Iterable&lt;Integer&gt; maxtermIterable() {
+<span class="nc" id="L73">		return indexedBF.maxtermIterable();</span>
+	}
+
+	@Override
+	public Iterable&lt;Integer&gt; dontCareIterable() {
+<span class="nc" id="L78">		return indexedBF.dontCareIterable();</span>
+	}
+
+	private void initialize() {
+<span class="nc" id="L82">		List&lt;Mask&gt; parsedMasksMinterms = removeDontCares(masks);</span>
+<span class="nc" id="L83">		List&lt;Integer&gt; mintermsOrMaxterms = new LinkedList&lt;&gt;();</span>
+<span class="nc bnc" id="L84" title="All 2 branches missed.">		for (Mask mask : parsedMasksMinterms) {</span>
+<span class="nc" id="L85">			mintermsOrMaxterms.add(Integer.parseInt(mask.toString(), 2));</span>
+<span class="nc" id="L86">		}</span>
+<span class="nc" id="L87">		List&lt;Mask&gt; parsedMasksDontCares = removeDontCares(dontCareMasks);</span>
+<span class="nc" id="L88">		List&lt;Integer&gt; dontCares = new LinkedList&lt;&gt;();</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">		for (Mask mask : parsedMasksDontCares) {</span>
+<span class="nc" id="L90">			dontCares.add(Integer.parseInt(mask.toString(), 2));</span>
+<span class="nc" id="L91">		}</span>
+<span class="nc" id="L92">		indexedBF = new IndexedBF(name, domain, masksAreMinterms,</span>
+				mintermsOrMaxterms, dontCares);
+<span class="nc" id="L94">	}</span>
+
+	/**
+	 * Returns List&lt;Mask&gt; in which no mask contains DONT_CARE value.
+	 * 
+	 * @param maskList
+	 *            -original Mask list
+	 * @return - List&lt;Mask&gt;
+	 */
+	private List&lt;Mask&gt; removeDontCares(List&lt;Mask&gt; maskList) {
+<span class="nc" id="L104">		List&lt;Mask&gt; newList = new LinkedList&lt;&gt;();</span>
+<span class="nc bnc" id="L105" title="All 2 branches missed.">		for (Mask mask : maskList) {</span>
+<span class="nc bnc" id="L106" title="All 2 branches missed.">			if (mask.getNumberOfDontCares() == 0) {</span>
+<span class="nc" id="L107">				newList.add(mask);</span>
+			} else {
+<span class="nc" id="L109">				addParsedMask(newList, mask);</span>
+			}
+<span class="nc" id="L111">		}</span>
+<span class="nc" id="L112">		return newList;</span>
+	}
+
+	/**
+	 * Method only used my removeDontCares. Parses masks containing x vales.
+	 * Replaces x with 0 and 1.
+	 * 
+	 * @param list
+	 * @param mask
+	 */
+	private void addParsedMask(List&lt;Mask&gt; list, Mask mask) {
+<span class="nc bnc" id="L123" title="All 2 branches missed.">		if (mask.getNumberOfDontCares() == 0) {</span>
+<span class="nc" id="L124">			list.add(mask);</span>
+		} else {
+<span class="nc" id="L126">			addParsedMask(list,</span>
+					Mask.parse(mask.toString().replaceFirst(&quot;x&quot;, &quot;0&quot;)));
+<span class="nc" id="L128">			addParsedMask(list,</span>
+					Mask.parse(mask.toString().replaceFirst(&quot;x&quot;, &quot;1&quot;)));
+		}
+<span class="nc" id="L131">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>BooleanOperator.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW04-0036441995</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.bool</a> &gt; <span class="el_source">BooleanOperator.java</span></div><h1>BooleanOperator.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.bool;
+
+import java.util.LinkedList;
+import java.util.List;
+
+/**
+ * BooleanOperator is an abstraction over boolean operators.
+ * &lt;p&gt;
+ * It has private list of sources based on which final result is calculated;
+ * this list must be provided through BooleanOperator's protected constructor as
+ * its only argument. Operators determine their domain by inspecting domains of
+ * given sources and producing an union (here, the ordering of boolean variables
+ * is not important).
+ * &lt;/p&gt;
+ * 
+ * @author Igor Petkovski
+ * 
+ */
+public abstract class BooleanOperator implements BooleanSource {
+
+	private List&lt;BooleanSource&gt; booleanSourceList;
+
+<span class="nc" id="L23">	protected BooleanOperator(List&lt;BooleanSource&gt; booleanSourceList) {</span>
+<span class="nc" id="L24">		this.booleanSourceList = booleanSourceList;</span>
+<span class="nc" id="L25">	}</span>
+
+	protected List&lt;BooleanSource&gt; getSources() {
+<span class="nc" id="L28">		return booleanSourceList;</span>
+	}
+
+	/**
+	 * Inspects all sources domains and returns their union in a new
+	 * List&lt;BooleanVariable&gt;.
+	 */
+	public List&lt;BooleanVariable&gt; getDomain() {
+<span class="nc" id="L36">		List&lt;BooleanVariable&gt; booleanVariableList = new LinkedList&lt;BooleanVariable&gt;();</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">		for (BooleanSource s : booleanSourceList) {</span>
+<span class="nc" id="L38">			booleanVariableList.addAll(s.getDomain());</span>
+<span class="nc" id="L39">		}</span>
+
+<span class="nc" id="L41">		return booleanVariableList;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="WINDOWS-1250" standalone="no"?>
+<pmd-cpd>
+<duplication lines="28" tokens="92">
+<file line="122" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="178" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<codefragment><![CDATA[				for (int i = 0; i < pow(2, domain.size()); i++) {
+					if (!indexes.contains(i) && !dontCares.contains(i)) {
+						newList.add(i);
+					}
+				}
+			} else {
+				newList = indexes;
+			}
+		}
+
+		@Override
+		public boolean hasNext() {
+			return current < newList.size();
+		}
+
+		@Override
+		public Integer next() {
+			return newList.get(current++);
+		}
+
+		@Override
+		public void remove() {
+			throw new UnsupportedOperationException(
+					"You cannot remove an element from boolean function: "
+							+ name);
+		}
+
+	}]]></codefragment>
+</duplication>
+<duplication lines="13" tokens="73">
+<file line="16" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="19" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<codefragment><![CDATA[				Arrays.asList(2, 3));
+
+		for (Integer i : f1.mintermIterable()) { // Ispis: 1, 3, 5, 6, 7
+			System.out.println("Imam minterm: " + i);
+		}
+		for (Integer i : f1.maxtermIterable()) { // Ispis: 0, 2, 4
+			System.out.println("Imam maxterm: " + i);
+		}
+		for (Integer i : f1.dontCareIterable()) { // Ispis:
+			System.out.println("Imam dontcare: " + i);
+		}
+	}
+}]]></codefragment>
+</duplication>
+<duplication lines="10" tokens="45">
+<file line="56" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="24" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\AboveAverage.java"/>
+<file line="24" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\NamesCounter.java"/>
+<codefragment><![CDATA[		try {
+			BufferedReader br = new BufferedReader(new InputStreamReader(
+					System.in));
+
+			String input;
+
+			while ((input = br.readLine()) != null) {
+				if (input.equals("quit")) {
+					break;
+				}]]></codefragment>
+</duplication>
+<duplication lines="17" tokens="44">
+<file line="236" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="46" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentRecord.java"/>
+<codefragment><![CDATA[		result = prime * result + Arrays.hashCode(maskValues);
+		return result;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;]]></codefragment>
+</duplication>
+<duplication lines="7" tokens="40">
+<file line="9" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="10" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<codefragment><![CDATA[public class Primjer1 {
+	public static void main(String[] args) {
+		BooleanVariable varA = new BooleanVariable("A");
+		BooleanVariable varB = new BooleanVariable("B");
+		BooleanVariable varC = new BooleanVariable("C");
+
+		BooleanFunction f1 = new IndexedBF("f1", Arrays.asList(varA, varB, varC), true, Arrays.asList(0, 1, 5, 7),]]></codefragment>
+</duplication>
+<duplication lines="15" tokens="39">
+<file line="101" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="157" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<codefragment><![CDATA[		Iterator<Integer> iterator = new MaxtermIterator();
+		List<Integer> list = new LinkedList<>();
+		while (iterator.hasNext()) {
+			list.add(iterator.next());
+		}
+		return list;
+	}
+
+	/**
+	 * Implements an iterator over maxterm indexes.
+	 * 
+	 * @author Igor Petkovski
+	 * 
+	 */
+	private class MaxtermIterator implements Iterator<Integer> {]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="37">
+<file line="136" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="146" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)
+					&& mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+				newMaskValues[i] = MaskValue.DONT_CARE;]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="28">
+<file line="142" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="147" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[					&& !mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+				newMaskValues[i] = MaskValue.DONT_CARE;
+				diffCounter++;
+			}
+			if (!mask1.maskValues[i].equals(MaskValue.DONT_CARE)]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="26">
+<file line="17" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="18" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<codefragment><![CDATA[		boolean isDontCare = false;
+		for (BooleanVariable var : this.getDomain()) {
+			if (var.getValue().equals(BooleanValue.FALSE)) {]]></codefragment>
+</duplication>
+<duplication lines="6" tokens="25">
+<file line="115" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="171" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<codefragment><![CDATA[	private class MaxtermIterator implements Iterator<Integer> {
+
+		private int current = 0;
+		private List<Integer> newList = new ArrayList<>();
+
+		private MaxtermIterator() {]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="24">
+<file line="89" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="282" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[		for (int i = 0; i < maskValues.length; i++) {
+			switch (maskValues[i]) {
+				case DONT_CARE :]]></codefragment>
+</duplication>
+<duplication lines="12" tokens="24">
+<file line="225" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="35" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentRecord.java"/>
+<codefragment><![CDATA[	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + Arrays.hashCode(maskValues);]]></codefragment>
+</duplication>
+<duplication lines="4" tokens="24">
+<file line="73" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase.java"/>
+<file line="90" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase.java"/>
+<codefragment><![CDATA[	public int getLongestName(List<StudentRecord> list) {
+		int longestName = 0;
+		for (StudentRecord student : list) {
+			if (student.getFirstName().length() > longestName) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="23">
+<file line="137" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="142" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[					&& mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+				newMaskValues[i] = MaskValue.DONT_CARE;]]></codefragment>
+</duplication>
+<duplication lines="14" tokens="23">
+<file line="38" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[	}
+
+	public String getName() {
+		return name;
+	}
+
+	public List<BooleanVariable> getDomain() {
+		return domain;
+	}
+
+	/**
+	 * 
+	 */
+	public boolean hasMinterm(int index) {]]></codefragment>
+</duplication>
+<duplication lines="4" tokens="21">
+<file line="16" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MasksTest.java"/>
+<file line="24" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MasksTest.java"/>
+<codefragment><![CDATA[		List<Mask> list2 = new LinkedList<>();
+		assertEquals("Lists should be the same class.", list1.getClass(),
+				list2.getClass());
+	}]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="20">
+<file line="9" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="10" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<file line="10" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Problem1.java"/>
+<codefragment><![CDATA[public class Primjer1 {
+	public static void main(String[] args) {
+		BooleanVariable varA = new BooleanVariable("A");]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="18">
+<file line="184" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="199" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="214" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[		int numberOfZeros = 0;
+		for (MaskValue value : maskValues) {
+			if (value.equals(MaskValue.ZERO)) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="18">
+<file line="126" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="128" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[			addParsedMask(list,
+					Mask.parse(mask.toString().replaceFirst("x", "0")));]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="17">
+<file line="31" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="22" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="16" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[			List<Integer> dontCares) {
+		super();
+		this.name = name;
+		this.domain = domain;
+		this.indexesAreMinterms = indexesAreMinterms;]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="17">
+<file line="85" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="90" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[			mintermsOrMaxterms.add(Integer.parseInt(mask.toString(), 2));
+		}]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="17">
+<file line="11" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="14" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<file line="15" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Problem1.java"/>
+<codefragment><![CDATA[		BooleanVariable varA = new BooleanVariable("A");
+		BooleanVariable varB = new BooleanVariable("B");
+		BooleanVariable varC = new BooleanVariable("C");]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="16">
+<file line="136" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="141" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)
+					&& mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="16">
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="20" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<codefragment><![CDATA[			} else if (var.getValue().equals(BooleanValue.DONT_CARE)) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="16">
+<file line="109" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="110" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[					+ buildString('=', student.getJmbag().length()) + "=+="
+					+ buildString('=', student.getLastName().length()) + "=+="]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="16">
+<file line="15" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="18" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<codefragment><![CDATA[		BooleanFunction f1 = new IndexedBF("f1", Arrays.asList(varA, varB, varC), true, Arrays.asList(0, 1, 5, 7),]]></codefragment>
+</duplication>
+<duplication lines="6" tokens="15">
+<file line="35" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\AboveAverage.java"/>
+<file line="37" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\NamesCounter.java"/>
+<codefragment><![CDATA[				sum += Double.parseDouble(input);
+			}
+
+		} catch (IOException io) {
+			io.printStackTrace();
+		}]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="14">
+<file line="93" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="99" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[				case ONE :
+					if (otherMask.maskValues[i].equals(MaskValue.ONE)) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="14">
+<file line="141" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="146" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)
+					&& !mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="14">
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="11" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[public class IndexedBF implements BooleanFunction {
+
+	private String name;
+	private List<BooleanVariable> domain;
+	private boolean indexesAreMinterms;]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="14">
+<file line="81" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="20" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<codefragment><![CDATA[		if (domain.get(index).getValue().equals(BooleanValue.DONT_CARE)) {
+			return true;]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="14">
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="22" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<codefragment><![CDATA[			} else if (var.getValue().equals(BooleanValue.DONT_CARE)) {]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="14">
+<file line="88" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="36" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\AboveAverage.java"/>
+<file line="38" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\NamesCounter.java"/>
+<codefragment><![CDATA[			}
+
+		} catch (IOException io) {
+			io.printStackTrace();
+		}]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="14">
+<file line="116" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="139" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[			System.out.println(firstAndLastLine);
+			System.out.println("Records selected: 1");]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="14">
+<file line="76" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase.java"/>
+<file line="93" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase.java"/>
+<codefragment><![CDATA[			if (student.getFirstName().length() > longestName) {
+				longestName = student.getFirstName().length();]]></codefragment>
+</duplication>
+<duplication lines="7" tokens="13">
+<file line="29" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanConstant.java"/>
+<file line="28" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanVariable.java"/>
+<codefragment><![CDATA[	}
+
+	public BooleanValue getValue() {
+		return this.value;
+	}
+
+	public List<BooleanVariable> getDomain() {]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="13">
+<file line="85" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="128" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[		if (maskValues.length != otherMask.getSize()) {
+			throw new IllegalArgumentException("Masks differ in size!");
+		}]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="13">
+<file line="81" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<codefragment><![CDATA[		if (domain.get(index).getValue().equals(BooleanValue.DONT_CARE)) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="13">
+<file line="105" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="122" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[		for (Mask mask : maskList) {
+			if (mask.getNumberOfDontCares() == 0) {]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="13">
+<file line="45" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<file line="55" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<file line="60" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<codefragment><![CDATA[				Mask.parse("10xxx"), result);
+	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testCombineException() {]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="12">
+<file line="27" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanConstant.java"/>
+<file line="34" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanVariable.java"/>
+<codefragment><![CDATA[	private BooleanConstant(BooleanValue value) {
+		this.value = value;
+	}
+
+	public BooleanValue getValue() {]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="12">
+<file line="136" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="137" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="141" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="142" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="146" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="147" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="12">
+<file line="139" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="150" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			}
+			// if one mask value is DONT_CARE
+			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)]]></codefragment>
+</duplication>
+<duplication lines="4" tokens="12">
+<file line="142" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="147" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="154" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[					&& !mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+				newMaskValues[i] = MaskValue.DONT_CARE;
+				diffCounter++;
+			}]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="12">
+<file line="44" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="38" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="31" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[	public List<BooleanVariable> getDomain() {
+		return domain;
+	}]]></codefragment>
+</duplication>
+<duplication lines="7" tokens="12">
+<file line="94" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="69" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[	}
+
+	/**
+	 * Returns the list of maxterm indexes.
+	 */
+	@Override
+	public Iterable<Integer> maxtermIterable() {]]></codefragment>
+</duplication>
+<duplication lines="10" tokens="12">
+<file line="205" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="40" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[	}
+
+	/**
+	 * Unavailable in Function context. Value is range of minterms, maxterms and
+	 * dont_care's.
+	 */
+	@Override
+	public BooleanValue getValue() {
+		return null;
+	}]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="12">
+<file line="83" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="88" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="104" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[		List<Integer> mintermsOrMaxterms = new LinkedList<>();
+		for (Mask mask : parsedMasksMinterms) {]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="12">
+<file line="19" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="20" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<file line="22" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<codefragment><![CDATA[			if (var.getValue().equals(BooleanValue.FALSE)) {]]></codefragment>
+</duplication>
+<duplication lines="4" tokens="12">
+<file line="15" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperators.java"/>
+<file line="19" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperators.java"/>
+<codefragment><![CDATA[		return new BooleanOperatorAND(Arrays.asList(booleanSources));
+	}
+	
+	public static BooleanOperator or(BooleanSource ... booleanSources) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="12">
+<file line="35" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter.java"/>
+<file line="69" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[		Pattern p = Pattern.compile(regex, Pattern.UNICODE_CHARACTER_CLASS);
+		Matcher m = p.matcher(record.getLastName());]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="12">
+<file line="80" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="83" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[						parseJmbagQuery(input.replaceFirst("jmbag *= *", "")
+								.replaceAll("\"", ""));
+					} else {]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="12">
+<file line="111" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="129" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[					+ buildString('=', student.getFirstName().length())
+					+ "=+===+";
+			System.out.println(firstAndLastLine);]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="12">
+<file line="152" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="156" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[								- student.getLastName().length())
+						+ " | "
+						+ student.getFirstName()]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="12">
+<file line="18" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\AboveAverage.java"/>
+<file line="18" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\NamesCounter.java"/>
+<file line="9" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="10" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<file line="10" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Problem1.java"/>
+<codefragment><![CDATA[public class AboveAverage {
+
+	public static void main(String[] args) {]]></codefragment>
+</duplication>
+<duplication lines="4" tokens="11">
+<file line="32" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanConstant.java"/>
+<file line="35" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanVariable.java"/>
+<codefragment><![CDATA[		return this.value;
+	}
+
+	public List<BooleanVariable> getDomain() {]]></codefragment>
+</duplication>
+<duplication lines="4" tokens="11">
+<file line="33" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanConstant.java"/>
+<file line="42" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="29" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[	}
+
+	public List<BooleanVariable> getDomain() {
+		return new LinkedList<BooleanVariable>();]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="70" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="154" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			} else {
+				newMaskValues[i] = MaskValue.DONT_CARE;]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="11">
+<file line="136" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="152" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="11">
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="11" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="9" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[public class IndexedBF implements BooleanFunction {
+
+	private String name;
+	private List<BooleanVariable> domain;
+	private boolean indexesAreMinterms;]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="29" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[	public IndexedBF(String name, List<BooleanVariable> domain,
+			boolean indexesAreMinterms, List<Integer> indexes,]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="11">
+<file line="56" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="58" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<codefragment><![CDATA[		if (indexesAreMinterms && indexes.contains(index)) {
+			return true;
+		} else if (!indexesAreMinterms && !indexes.contains(index)) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="121" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="177" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<codefragment><![CDATA[			if (indexesAreMinterms) {
+				for (int i = 0; i < pow(2, domain.size()); i++) {]]></codefragment>
+</duplication>
+<duplication lines="6" tokens="11">
+<file line="12" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="13" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<codefragment><![CDATA[		super(list);
+	}
+
+	@Override
+	public BooleanValue getValue() {
+		boolean isDontCare = false;]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="11">
+<file line="19" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="19" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorNOT.java"/>
+<codefragment><![CDATA[			if (var.getValue().equals(BooleanValue.FALSE)) {
+				return BooleanValue.FALSE;
+			} else if (var.getValue().equals(BooleanValue.DONT_CARE)) {]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="11">
+<file line="110" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="152" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[					+ buildString('=', student.getLastName().length()) + "=+="]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="11">
+<file line="111" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="114" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[					+ buildString('=', student.getFirstName().length())]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="111" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="156" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[					+ buildString('=', student.getFirstName().length())
+					+ "=+===+";]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="11">
+<file line="77" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase.java"/>
+<file line="94" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase.java"/>
+<codefragment><![CDATA[				longestName = student.getFirstName().length();
+			}
+		}
+		return longestName;
+	}]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="11">
+<file line="19" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="22" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="23" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<file line="26" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<codefragment><![CDATA[			System.out.println("Imam minterm: " + i);
+		}
+		for (Integer i : f1.maxtermIterable()) { // Ispis: 0, 2, 4]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="11">
+<file line="11" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<file line="24" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<codefragment><![CDATA[		Mask mask = new Mask(new MaskValue[] {MaskValue.ONE, MaskValue.ZERO, MaskValue.DONT_CARE});]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="11">
+<file line="14" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MasksTest.java"/>
+<file line="22" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MasksTest.java"/>
+<codefragment><![CDATA[	public void testFromIndexes() {
+		List<Mask> list1 = Masks.fromIndexes(5, 1, 2, 3, 4, 5);]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="33" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanConstant.java"/>
+<file line="29" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanOperator.java"/>
+<file line="36" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanVariable.java"/>
+<file line="42" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="29" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[	}
+
+	public List<BooleanVariable> getDomain() {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="35" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanConstant.java"/>
+<file line="38" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[	public List<BooleanVariable> getDomain() {
+		return new LinkedList<BooleanVariable>();]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="20" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanVariable.java"/>
+<file line="31" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="22" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="16" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[	public BooleanVariable(String name) {
+		super();
+		this.name = name;]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="10">
+<file line="23" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\BooleanVariable.java"/>
+<file line="30" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[	}
+
+	@Override
+	public String getName() {
+		return this.name;]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="62" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="129" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[					"Unsupported string type. Please enter the string only containing: '0', '1' or 'x' characters!");
+		}
+		MaskValue[] newMaskValues = new MaskValue[input.length()];]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="70" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="137" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[			} else {
+				newMaskValues[i] = MaskValue.DONT_CARE;
+			}]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="10">
+<file line="94" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="100" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="136" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="137" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="141" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="142" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="146" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="147" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[					if (otherMask.maskValues[i].equals(MaskValue.ONE)) {]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="10">
+<file line="94" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="100" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[					if (otherMask.maskValues[i].equals(MaskValue.ONE)) {
+						continue;
+					} else {
+						return false;
+					}]]></codefragment>
+</duplication>
+<duplication lines="17" tokens="10">
+<file line="108" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="58" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="81" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<codefragment><![CDATA[		if (!maskValues.equals(otherMask.maskValues)) {
+			return true;
+		}
+		// otherwise they are equal and result is false
+		return false;
+	}
+
+	/**
+	 * Combines two masks into new, more general Mask instance.
+	 * 
+	 * @param mask1
+	 *            - must be same size of mask2
+	 * @param mask2
+	 *            - must be same size of mask1
+	 * @return new Mask instance
+	 */
+	public static Mask combine(Mask mask1, Mask mask2) {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="272" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<file line="281" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\Mask.java"/>
+<codefragment><![CDATA[		String prefix = "";
+		for (int i = 0; i < maxLength - originalString.length(); i++) {]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="10">
+<file line="29" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="15" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\OperatorTreeBF.java"/>
+<codefragment><![CDATA[	public IndexedBF(String name, List<BooleanVariable> domain,]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="92" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="77" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[	public Iterable<Integer> dontCareIterable() {
+		return dontCares;]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="100" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<file line="156" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\IndexedBF.java"/>
+<codefragment><![CDATA[	public Iterable<Integer> maxtermIterable() {
+		Iterator<Integer> iterator = new MaxtermIterator();]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="10">
+<file line="68" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="73" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[		return indexedBF.mintermIterable();
+	}
+
+	@Override
+	public Iterable<Integer> maxtermIterable() {]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="107" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<file line="124" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\fimpl\MaskBasedBF.java"/>
+<codefragment><![CDATA[				newList.add(mask);
+			} else {
+				addParsedMask(newList, mask);]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="10">
+<file line="12" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorAND.java"/>
+<file line="13" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorNOT.java"/>
+<file line="13" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\bool\opimpl\BooleanOperatorOR.java"/>
+<codefragment><![CDATA[		super(list);
+	}
+
+	@Override
+	public BooleanValue getValue() {]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="10">
+<file line="28" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="20" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\AboveAverage.java"/>
+<file line="20" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\NamesCounter.java"/>
+<file line="10" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="12" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<file line="11" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Problem1.java"/>
+<codefragment><![CDATA[	public static void main(String[] args) throws IOException {]]></codefragment>
+</duplication>
+<duplication lines="3" tokens="10">
+<file line="72" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="45" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\NamesCounter.java"/>
+<file line="18" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="21" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="24" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer1.java"/>
+<file line="22" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<file line="25" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<file line="28" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\test\Primjer3.java"/>
+<codefragment><![CDATA[				if (!m.matches()) {
+					System.out
+							.println("You must enter query in form of:    query jmbag=  or  query lastName= ."]]></codefragment>
+</duplication>
+<duplication lines="1" tokens="10">
+<file line="110" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="114" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[					+ buildString('=', student.getLastName().length()) + "=+="]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="114" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<file line="156" path="D:\ZEclipseProjects\HW04-0036441995\src\main\java\hr\fer\zemris\java\tecaj\hw4\db\StudentDB.java"/>
+<codefragment><![CDATA[			displayStudent(student, student.getLastName().length(), student
+					.getFirstName().length());]]></codefragment>
+</duplication>
+<duplication lines="5" tokens="10">
+<file line="12" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<file line="18" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MasksTest.java"/>
+<codefragment><![CDATA[		assertEquals("This should create a new Mask instance!", Mask.class, mask.getClass());
+	}
+
+	@Test
+	public void testGetValue() {]]></codefragment>
+</duplication>
+<duplication lines="2" tokens="10">
+<file line="16" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<file line="31" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<file line="39" path="D:\ZEclipseProjects\HW04-0036441995\src\test\java\hr\fer\zemris\bool\MaskTest.java"/>
+<codefragment><![CDATA[	public void testGetValue() {
+		Mask mask1 = Mask.parse("x01");]]></codefragment>
+</duplication>
+</pmd-cpd>

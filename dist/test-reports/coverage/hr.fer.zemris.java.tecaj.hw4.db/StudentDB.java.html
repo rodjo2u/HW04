@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>StudentDB.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW04-0036441995</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw4.db</a> &gt; <span class="el_source">StudentDB.java</span></div><h1>StudentDB.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw4.db;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.Collections;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/**
+ * Program reads file from current directory from file database.txt.
+ * &lt;p&gt;
+ * Later program calls StudentDatabase which parses the given data and creates
+ * database emulated trough list of instances of type {@link StudentRecord}.
+ * &lt;/p&gt;
+ * 
+ * @author Igor Petkovski
+ * 
+ */
+<span class="nc" id="L24">public class StudentDB {</span>
+
+	private static StudentDatabase sd;
+
+	public static void main(String[] args) throws IOException {
+
+<span class="nc" id="L30">		createDatabase(args[0]);</span>
+
+<span class="nc" id="L32">		waitForQueries();</span>
+
+<span class="nc" id="L34">	}</span>
+
+	private static void createDatabase(String path) throws IOException {
+		try {
+<span class="nc" id="L38">			List&lt;String&gt; lines = Files.readAllLines(Paths.get(path),</span>
+					StandardCharsets.UTF_8);
+
+<span class="nc" id="L41">			sd = new StudentDatabase(lines);</span>
+<span class="nc" id="L42">		} catch (Exception e) {</span>
+<span class="nc" id="L43">			System.out</span>
+					.println(&quot;File datoteka.txt does not exist or is not formatted well!&quot;);
+<span class="nc" id="L45">			e.printStackTrace();</span>
+<span class="nc" id="L46">			System.in.read();</span>
+<span class="nc" id="L47">			System.exit(1);</span>
+<span class="nc" id="L48">		}</span>
+
+<span class="nc" id="L50">	}</span>
+
+	/**
+	 * Loop method which receives and responds to queries form command line.
+	 */
+	private static void waitForQueries() {
+		try {
+<span class="nc" id="L57">			BufferedReader br = new BufferedReader(new InputStreamReader(</span>
+					System.in));
+
+			String input;
+
+<span class="nc bnc" id="L62" title="All 2 branches missed.">			while ((input = br.readLine()) != null) {</span>
+<span class="nc bnc" id="L63" title="All 2 branches missed.">				if (input.equals(&quot;quit&quot;)) {</span>
+<span class="nc" id="L64">					break;</span>
+				}
+
+<span class="nc" id="L67">				Pattern p = Pattern</span>
+						.compile(
+								&quot; *query *(lastName *= *\\\&quot;(\\*\\w+|\\w+\\*\\w+|\\w+\\*|\\w+|\\*)\\\&quot;|jmbag *= *\\\&quot;\\d+\\\&quot;)&quot;,
+								Pattern.UNICODE_CHARACTER_CLASS);
+<span class="nc" id="L71">				Matcher m = p.matcher(input);</span>
+<span class="nc bnc" id="L72" title="All 2 branches missed.">				if (!m.matches()) {</span>
+<span class="nc" id="L73">					System.out</span>
+							.println(&quot;You must enter query in form of:    query jmbag=  or  query lastName= .&quot;
+									+ &quot;Last name query only accepts one wildcard charcter&quot;);
+				} else {
+<span class="nc" id="L77">					input = input.replaceFirst(&quot; *query *&quot;, &quot;&quot;);</span>
+
+<span class="nc bnc" id="L79" title="All 2 branches missed.">					if (input.startsWith(&quot;jmbag&quot;)) {</span>
+<span class="nc" id="L80">						parseJmbagQuery(input.replaceFirst(&quot;jmbag *= *&quot;, &quot;&quot;)</span>
+								.replaceAll(&quot;\&quot;&quot;, &quot;&quot;));
+					} else {
+<span class="nc" id="L83">						parseLastNameQuery(input.replaceFirst(&quot;lastName *= *&quot;,</span>
+								&quot;&quot;).replaceAll(&quot;\&quot;&quot;, &quot;&quot;));
+					}
+				}
+
+<span class="nc" id="L88">			}</span>
+
+<span class="nc" id="L90">		} catch (IOException io) {</span>
+<span class="nc" id="L91">			io.printStackTrace();</span>
+<span class="nc" id="L92">		}</span>
+<span class="nc" id="L93">	}</span>
+
+	private static void parseJmbagQuery(String jmbag) {
+<span class="nc" id="L96">		displayJmbagQuery(sd.forJMBAG(jmbag));</span>
+<span class="nc" id="L97">	}</span>
+
+	/**
+	 * Method for formatting of output for single student.
+	 * 
+	 * @param student
+	 */
+	private static void displayJmbagQuery(StudentRecord student) {
+<span class="nc bnc" id="L105" title="All 2 branches missed.">		if (student == null) {</span>
+<span class="nc" id="L106">			System.out.println(&quot;Records selected: 0&quot;);</span>
+		} else {
+<span class="nc" id="L108">			String firstAndLastLine = &quot;+=&quot;</span>
+					+ buildString('=', student.getJmbag().length()) + &quot;=+=&quot;
+					+ buildString('=', student.getLastName().length()) + &quot;=+=&quot;
+					+ buildString('=', student.getFirstName().length())
+					+ &quot;=+===+&quot;;
+<span class="nc" id="L113">			System.out.println(firstAndLastLine);</span>
+<span class="nc" id="L114">			displayStudent(student, student.getLastName().length(), student</span>
+					.getFirstName().length());
+<span class="nc" id="L116">			System.out.println(firstAndLastLine);</span>
+<span class="nc" id="L117">			System.out.println(&quot;Records selected: 1&quot;);</span>
+		}
+<span class="nc" id="L119">	}</span>
+
+	private static void parseLastNameQuery(String lastNameRegex) {
+<span class="nc" id="L122">		LastNameFilter lnFilter = new LastNameFilter(lastNameRegex);</span>
+<span class="nc" id="L123">		List&lt;StudentRecord&gt; filteredStudentRecords = sd.filter(lnFilter);</span>
+
+<span class="nc" id="L125">		String firstAndLastLine = &quot;+===========&quot;</span>
+				+ &quot;=+=&quot;
+				+ buildString('=',
+						sd.getLongestLastName(filteredStudentRecords)) + &quot;=+=&quot;
+				+ buildString('=', sd.getLongestName(filteredStudentRecords))
+				+ &quot;=+===+&quot;;
+
+<span class="nc" id="L132">		System.out.println(firstAndLastLine);</span>
+<span class="nc" id="L133">		int longestLastName = sd.getLongestLastName(filteredStudentRecords);</span>
+<span class="nc" id="L134">		int longestName = sd.getLongestName(filteredStudentRecords);</span>
+<span class="nc" id="L135">		Collections.sort(filteredStudentRecords);</span>
+<span class="nc bnc" id="L136" title="All 2 branches missed.">		for (StudentRecord student : filteredStudentRecords) {</span>
+<span class="nc" id="L137">			displayStudent(student, longestLastName, longestName);</span>
+<span class="nc" id="L138">		}</span>
+<span class="nc" id="L139">		System.out.println(firstAndLastLine);</span>
+<span class="nc" id="L140">		System.out</span>
+				.println(&quot;Records selected: &quot; + filteredStudentRecords.size());
+<span class="nc" id="L142">	}</span>
+
+	private static void displayStudent(StudentRecord student,
+			int lastNameLength, int nameLength) {
+<span class="nc" id="L146">		System.out</span>
+				.println(&quot;| &quot;
+						+ student.getJmbag()
+						+ &quot; | &quot;
+						+ student.getLastName()
+						+ buildString(' ', lastNameLength
+								- student.getLastName().length())
+						+ &quot; | &quot;
+						+ student.getFirstName()
+						+ buildString(' ', nameLength
+								- student.getFirstName().length()) + &quot; | &quot;
+						+ student.getFinalGrade() + &quot; |&quot;);
+<span class="nc" id="L158">	}</span>
+
+	/**
+	 * Concatenates char c times times into string.
+	 * 
+	 * @param c
+	 *            char to concatenate
+	 * @param times
+	 *            times to concatenate
+	 * @return new String
+	 */
+	private static String buildString(char c, int times) {
+<span class="nc bnc" id="L170" title="All 2 branches missed.">		if (times == 0) {</span>
+<span class="nc" id="L171">			return &quot;&quot;;</span>
+		}
+<span class="nc" id="L173">		String output = String.valueOf(c);</span>
+<span class="nc bnc" id="L174" title="All 2 branches missed.">		for (int i = 1; i &lt; times; i++) {</span>
+<span class="nc" id="L175">			output = output.concat(String.valueOf(c));</span>
+		}
+<span class="nc" id="L177">		return output;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

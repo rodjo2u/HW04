@@ -1,0 +1,2788 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PMD 5.1.0 Report</title>
+<script src="sorttable.js" type="text/javascript"></script>
+<style type="text/css">
+        body { margin-left: 2%; margin-right: 2%; font:normal verdana,arial,helvetica; color:#000000; }
+        table.sortable tr th { font-weight: bold; text-align:left; background:#a6caf0; }
+        table.sortable tr td { background:#eeeee0; }
+        table.classcount tr th { font-weight: bold; text-align:left; background:#a6caf0; }
+        table.classcount tr td { background:#eeeee0; }
+        table.summary tr th { font-weight: bold; text-align:left; background:#a6caf0; }
+        table.summary tr td { background:#eeeee0; text-align:center;}
+        .p1 { background:#FF9999; }
+        .p2 { background:#FFCC66; }
+        .p3 { background:#FFFF99; }
+        .p4 { background:#99FF99; }
+        .p5 { background:#9999FF; }
+		div.top{text-align:right;margin:1em 0;padding:0}
+		div.top div{display:inline;white-space:nowrap}
+		div.top div.left{float:left}
+		#content>div.top{display:table;width:100%}
+		#content>div.top div{display:table-cell}
+		#content>div.top div.left{float:none;text-align:left}
+		#content>div.top div.right{text-align:right}
+    </style>
+</head>
+<body>
+<H1>
+<div class="top">
+<div class="left">PMD 5.1.0 Report</div>
+<div class="right">2014-04-07 - 07:51:11</div>
+</div>
+</H1>
+<hr>
+<h2>Summary</h2>
+<table class="summary" border="0">
+<tr>
+<th>Files</th><th>Total</th><th>Priority 1</th><th>Priority 2</th><th>Priority 3</th><th>Priority 4</th><th>Priority 5</th>
+</tr>
+<tr>
+<td>25</td><td>389</td><td>
+<div class="p1">3</div>
+</td><td>
+<div class="p2">0</div>
+</td><td>
+<div class="p3">289</div>
+</td><td>
+<div class="p4">1</div>
+</td><td>
+<div class="p5">96</div>
+</td>
+</tr>
+</table>
+<hr>
+<table id="sortable_id" class="sortable" width="100%" border="0">
+<tr>
+<th>Prio</th><th>File</th><th>Line</th><th align="left">Description</th>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p1">1</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanConstant</td><td align="right" style="padding: 3px">23</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ClassWithOnlyPrivateConstructorsShouldBeFinal">
+A class which only has private constructors should be final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanConstant</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'value' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanConstant</td><td align="right" style="padding: 3px">27</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'value' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanConstant</td><td align="right" style="padding: 3px">39</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanConstant</td><td align="right" style="padding: 3px">42</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#FieldDeclarationsShouldBeAtStartOfClass">
+Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanFunction</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanFunction</td><td align="right" style="padding: 3px">24</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanFunction</td><td align="right" style="padding: 3px">26</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanFunction</td><td align="right" style="padding: 3px">28</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanFunction</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanFunction</td><td align="right" style="padding: 3px">32</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">19</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#AbstractNaming">
+Abstract classes should be named AbstractXXX
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'booleanSourceList' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">23</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'booleanSourceList' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">35</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 's' (lines '35'-'38').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">36</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable">
+Avoid excessively long variable names like booleanVariableList
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">36</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'booleanVariableList' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">37</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like s
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanOperator</td><td align="right" style="padding: 3px">37</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 's' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanSource</td><td align="right" style="padding: 3px">19</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanSource</td><td align="right" style="padding: 3px">27</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanVariable</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanVariable</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'name' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanVariable</td><td align="right" style="padding: 3px">34</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'value' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\BooleanVariable</td><td align="right" style="padding: 3px">39</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'list' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p4">4</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortClassName">
+A Classname should have a minimum of five characters
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#CyclomaticComplexity">
+The class 'Mask' has a Cyclomatic Complexity of 4 (Highest = 13).
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'maskValues' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'maskValues' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/sunsecure.html#ArrayIsStoredDirectly">
+The user-supplied array 'maskValues' is stored directly.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">33</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'index' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">59</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'input' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">64</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '64'-'67').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">64</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '64'-'69').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">64</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '64'-'71').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">66</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">67</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '67'-'67').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">67</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '67'-'69').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">67</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '67'-'71').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">68</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">69</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '69'-'67').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">69</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '69'-'69').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">69</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '69'-'71').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">71</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '71'-'67').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">71</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '71'-'69').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">71</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '71'-'71').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">84</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'otherMask' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">90</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#MissingBreakInSwitch">
+A switch statement does not contain a break
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">90</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#SwitchStmtsShouldHaveDefault">
+Switch statements should have a default label
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">97</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">103</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">109</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">124</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'mask1' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">124</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'mask2' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">124</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#CyclomaticComplexity">
+The method 'combine' has a Cyclomatic Complexity of 13.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">124</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#NPathComplexity">
+The method combine() has an NPath complexity of 660
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">131</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'138').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">131</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'143').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">131</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'148').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">131</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'153').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">131</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '131'-'155').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">131</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'newMaskValues' (lines '131'-'163').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">133</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '133'-'144').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">133</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '133'-'149').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">133</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '133'-'156').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">138</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'143').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">138</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'148').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">138</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'153').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">138</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '138'-'155').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">143</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '143'-'148').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">143</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '143'-'153').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">143</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '143'-'155').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">144</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '144'-'144').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">144</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '144'-'149').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">144</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '144'-'156').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">148</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '148'-'153').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">148</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '148'-'155').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">149</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '149'-'144').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">149</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '149'-'149').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">149</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '149'-'156').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">153</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'138').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">153</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'143').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">153</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'148').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">153</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'153').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">153</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '153'-'155').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">153</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'newMaskValues' (lines '153'-'163').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">155</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'138').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">155</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'143').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">155</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'148').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">155</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'153').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">155</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'newMaskValues' (lines '155'-'155').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">155</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'newMaskValues' (lines '155'-'163').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">156</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '156'-'144').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">156</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '156'-'149').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">156</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'diffCounter' (lines '156'-'156').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">159</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">160</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">165</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'size' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">165</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'value' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">167</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">183</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'value' (lines '183'-'186').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">184</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'numberOfZeros' (lines '184'-'187').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">185</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'value' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">187</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'numberOfZeros' (lines '187'-'187').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">198</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'value' (lines '198'-'201').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">199</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'numberOfOnes' (lines '199'-'202').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">200</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'value' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">202</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'numberOfOnes' (lines '202'-'202').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">213</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'value' (lines '213'-'216').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">214</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'numberOfDontCares' (lines '214'-'217').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">215</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'value' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">217</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'numberOfDontCares' (lines '217'-'217').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">234</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidFinalLocalVariable">
+Avoid using final local variables, turn them into fields
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">235</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'result' (lines '235'-'236').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">246</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'obj' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">247</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">248</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">249</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">250</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">251</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">252</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">253</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'other' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">254</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">255</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">270</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'originalString' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">270</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'padding' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">271</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'maxLength' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">272</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'prefix' (lines '272'-'274').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">281</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'result' (lines '281'-'285').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">281</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'result' (lines '281'-'288').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">281</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'result' (lines '281'-'291').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Mask</td><td align="right" style="padding: 3px">283</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#SwitchStmtsShouldHaveDefault">
+Switch statements should have a default label
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p1">1</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">7</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ClassWithOnlyPrivateConstructorsShouldBeFinal">
+A class which only has private constructors should be final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">26</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'value' (lines '26'-'29').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">26</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'size' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">26</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'values' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">27</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'list' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">28</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'value' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">41</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'strings' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\Masks</td><td align="right" style="padding: 3px">42</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'list' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\NamedBooleanSource</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/codesize.html#TooManyMethods">
+This class has too many methods, consider refactoring it.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">23</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">24</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'domain' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable">
+Avoid excessively long variable names like indexesAreMinterms
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'indexesAreMinterms' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">26</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'indexes' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">27</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'dontCares' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">29</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'domain' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">29</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'name' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable">
+Avoid excessively long variable names like indexesAreMinterms
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'indexes' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'indexesAreMinterms' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">31</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'dontCares' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">51</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'index' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">57</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">59</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">69</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'index' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">80</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'index' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">82</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">101</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#AccessorClassGeneration">
+Avoid instantiation through private constructors from outside of the constructors class.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">101</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'iterator' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">102</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'list' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">117</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#RedundantFieldInitializer">
+Avoid using redundant field initializer for 'current'
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">157</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#AccessorClassGeneration">
+Avoid instantiation through private constructors from outside of the constructors class.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">157</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'iterator' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">158</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'list' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">173</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#RedundantFieldInitializer">
+Avoid using redundant field initializer for 'current'
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\IndexedBF</td><td align="right" style="padding: 3px">177</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ConfusingTernary">
+Avoid if (x != y) ..; else ..;
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">13</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">14</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'domain' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">15</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'masksAreMinterms' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'masks' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">17</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'dontCareMasks' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'domain' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'name' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'dontCareMasks' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'masks' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'masksAreMinterms' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">52</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'index' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">57</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'index' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">62</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'index' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">81</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'mask' (lines '81'-'85').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">82</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable">
+Avoid excessively long variable names like parsedMasksMinterms
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">82</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'parsedMasksMinterms' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">83</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable">
+Avoid excessively long variable names like mintermsOrMaxterms
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">83</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'mintermsOrMaxterms' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">84</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'mask' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">87</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable">
+Avoid excessively long variable names like parsedMasksDontCares
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">87</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'parsedMasksDontCares' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">88</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'dontCares' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">89</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'mask' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">103</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'mask' (lines '103'-'106').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">103</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'maskList' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">104</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'newList' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">105</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'mask' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">106</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">122</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'list' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">122</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'mask' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\MaskBasedBF</td><td align="right" style="padding: 3px">123</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">11</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">12</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'domain' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">13</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedPrivateField">
+Avoid unused private fields such as 'operatorTree'.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">13</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#SingularField">
+Perhaps 'operatorTree' could be replaced by a local variable.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">13</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'operatorTree' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">15</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'domain' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">15</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'name' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\fimpl\OperatorTreeBF</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'operatorTree' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">11</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'list' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'var' (lines '16'-'19').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">17</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'isDontCare' (lines '17'-'22').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">17</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'isDontCare' (lines '17'-'29').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'var' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'isDontCare' (lines '22'-'22').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'isDontCare' (lines '22'-'29').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorAND</td><td align="right" style="padding: 3px">26</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorNOT</td><td align="right" style="padding: 3px">12</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'source' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorNOT</td><td align="right" style="padding: 3px">17</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 's' (lines '17'-'19').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorNOT</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like s
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorNOT</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 's' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorNOT</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorNOT</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">12</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'booleanSourceList' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">17</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'var' (lines '17'-'20').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'isTrue' (lines '18'-'23').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'isTrue' (lines '18'-'30').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">19</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'var' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">23</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'isTrue' (lines '23'-'23').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">23</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'isTrue' (lines '23'-'30').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperatorOR</td><td align="right" style="padding: 3px">27</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p1">1</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperators</td><td align="right" style="padding: 3px">8</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ClassWithOnlyPrivateConstructorsShouldBeFinal">
+A class which only has private constructors should be final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperators</td><td align="right" style="padding: 3px">14</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'booleanSources' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperators</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortMethodName">
+Avoid using short method names
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperators</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'booleanSources' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\bool\opimpl\BooleanOperators</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'source' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\IFilter</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/unusedcode.html#UnusedModifier">
+Avoid modifiers which are implied by the context
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">15</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'regex' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">24</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'filter' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">34</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'record' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">35</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like p
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">35</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'p' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">36</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like m
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">36</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'm' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\LastNameFilter</td><td align="right" style="padding: 3px">38</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">24</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">26</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like sd
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">28</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'args' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">36</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'path' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">38</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'lines' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">42</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/strictexception.html#AvoidCatchingGenericException">
+Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">57</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like br
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">57</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'br' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">62</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AssignmentInOperand">
+Avoid assignments in operands
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">62</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'input' (lines '62'-'93').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">63</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#PositionLiteralsFirstInComparisons">
+Position literals first in String comparisons
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">67</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like p
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">67</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'p' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">71</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like m
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">71</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'm' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">72</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ConfusingTernary">
+Avoid if (x != y) ..; else ..;
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">95</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'jmbag' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">104</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'student' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">108</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'firstAndLastLine' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">109</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/strings.html#AvoidDuplicateLiterals">
+The String literal "=+=" appears 4 times in this file; the first occurrence is on line 109
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">121</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'student' (lines '121'-'137').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">121</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'lastNameRegex' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">122</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'lnFilter' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">123</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#LongVariable">
+Avoid excessively long variable names like filteredStudentRecords
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">123</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'filteredStudentRecords' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">125</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'firstAndLastLine' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">133</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'longestLastName' (lines '133'-'142').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">133</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'longestLastName' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">134</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'longestName' (lines '134'-'142').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">134</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'longestName' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">136</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'student' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">144</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'student' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">145</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'lastNameLength' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">145</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'nameLength' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">169</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like c
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">169</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'c' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">169</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'times' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">170</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">171</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDB</td><td align="right" style="padding: 3px">173</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'output' (lines '173'-'175').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#UseConcurrentHashMap">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'database' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'lines' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'line' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">28</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#AvoidInstantiatingObjectsInLoops">
+Avoid instantiating new objects inside loops
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">42</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'jmbag' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">44</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">56</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'student' (lines '56'-'59').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">56</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'filter' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">57</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'newStudentList' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">58</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'student' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">73</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'student' (lines '73'-'76').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">73</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'list' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">75</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'student' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">90</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'student' (lines '90'-'93').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">90</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'list' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentDatabase</td><td align="right" style="padding: 3px">92</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'student' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'jmbag' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">17</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'lastName' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#ImmutableField">
+Private field 'firstName' could be made final; it is only initialized in the declaration or constructor.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'firstName' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'jmbag' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'lastName' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'finalGrade' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">44</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidFinalLocalVariable">
+Avoid using final local variables, turn them into fields
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">45</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DD'-anomaly for variable 'result' (lines '45'-'46').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">56</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'obj' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">57</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">58</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">59</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">60</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">61</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">62</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">63</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'other' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">65</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">66</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">67</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfStmtsMustUseBraces">
+Avoid using if statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">68</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">83</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'finalGrade' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">109</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like o
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">109</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'o' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">110</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AvoidLiteralsInIfCondition">
+Avoid using Literals in Conditional Statements
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">hr\fer\zemris\java\tecaj\hw4\db\StudentRecord</td><td align="right" style="padding: 3px">111</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#OnlyOneReturn">
+A method should have only one exit point, and that should be the last statement in the method
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'number' (lines '20'-'45').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'number' (lines '20'-'53').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'args' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'numbers' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like br
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'br' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AssignmentInOperand">
+Avoid assignments in operands
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'input' (lines '30'-'55').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">31</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#PositionLiteralsFirstInComparisons">
+Position literals first in String comparisons
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">42</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'avg' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">43</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'newList' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">44</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'number' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\AboveAverage</td><td align="right" style="padding: 3px">52</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'number' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'name' (lines '20'-'46').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'args' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#UseConcurrentHashMap">
+If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'names' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like br
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'br' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#AssignmentInOperand">
+Avoid assignments in operands
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">30</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'DU'-anomaly for variable 'input' (lines '30'-'49').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">31</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#PositionLiteralsFirstInComparisons">
+Position literals first in String comparisons
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">37</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/braces.html#IfElseStmtsMustUseBraces">
+Avoid using if...else statements without curly braces
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\NamesCounter</td><td align="right" style="padding: 3px">45</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'name' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">9</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">10</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'i' (lines '10'-'19').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">10</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'args' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">11</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varA' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">12</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varB' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">13</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varC' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">15</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like f1
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">15</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'f1' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like i
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'i' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like i
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">21</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'i' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">24</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like i
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer1</td><td align="right" style="padding: 3px">24</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'i' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">10</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p5">5</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">12</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/controversial.html#DataflowAnomalyAnalysis">
+Found 'UR'-anomaly for variable 'i' (lines '12'-'23').
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">12</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'args' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">14</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varA' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">15</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varB' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varC' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like f1
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">18</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'f1' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like i
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">22</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'i' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like i
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">25</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'i' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">28</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/naming.html#ShortVariable">
+Avoid variables with short names like i
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Primjer3</td><td align="right" style="padding: 3px">28</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'i' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Problem1</td><td align="right" style="padding: 3px">10</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/design.html#UseUtilityClass">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Problem1</td><td align="right" style="padding: 3px">11</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#MethodArgumentCouldBeFinal">
+Parameter 'args' is not assigned and could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Problem1</td><td align="right" style="padding: 3px">14</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varA' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Problem1</td><td align="right" style="padding: 3px">16</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varB' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Problem1</td><td align="right" style="padding: 3px">17</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'varC' could be declared final
+</a></td>
+</tr>
+<tr>
+<td align="right" style="padding: 3px">
+<div class="p3">3</div>
+</td><td align="left" style="padding: 3px">test\Problem1</td><td align="right" style="padding: 3px">20</td><td width="100%" align="left" style="padding: 3px"><a href="http://pmd.sourceforge.net/pmd-5.1.0/rules/java/optimizations.html#LocalVariableCouldBeFinal">
+Local variable 'izraz1' could be declared final
+</a></td>
+</tr>
+</table>
+<br>
+<p>Generated by <a href="http://pmd.sourceforge.net">PMD <b>5.1.0</b></a> on 2014-04-07 - 07:51:11.</p>
+</body>
+</html>

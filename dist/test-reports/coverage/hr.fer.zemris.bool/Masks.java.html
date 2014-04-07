@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Masks.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW04-0036441995</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.bool</a> &gt; <span class="el_source">Masks.java</span></div><h1>Masks.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.bool;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class Masks extends Mask {
+
+	private Masks() {
+<span class="nc" id="L10">		super(null);</span>
+<span class="nc" id="L11">	}</span>
+
+	/**
+	 * Creates a list of masks based on Mask.fromIndex function. You can supply
+	 * the method with arbitrary number of values, but all masks will be of
+	 * constant size.
+	 * 
+	 * Masks will only have values 0 and 1.
+	 * 
+	 * @param size
+	 *            length of the masks
+	 * @param values
+	 *            list of masks with the values values
+	 * @return List&lt;Mask&gt;
+	 */
+	public static List&lt;Mask&gt; fromIndexes(int size, int... values) {
+<span class="fc" id="L27">		List&lt;Mask&gt; list = new LinkedList&lt;&gt;();</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">		for (int value : values) {</span>
+<span class="fc" id="L29">			list.add(Mask.fromIndex(size, value));</span>
+		}
+<span class="fc" id="L31">		return list;</span>
+	}
+
+	/**
+	 * Creates new list of {@link Mask}s from string resources.
+	 * 
+	 * @param strings
+	 *            - unlimited number of arguments
+	 * @return new List&lt;Mask&gt; (ArrayList internally)
+	 */
+	public static List&lt;Mask&gt; fromStrings(String... strings) {
+<span class="fc" id="L42">		List&lt;Mask&gt; list = new ArrayList&lt;Mask&gt;(strings.length);</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">		for (int i = 0; i &lt; strings.length; i++) {</span>
+<span class="fc" id="L44">			list.add(Mask.parse(strings[i]));</span>
+		}
+<span class="fc" id="L46">		return list;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>

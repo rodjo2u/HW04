@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Mask.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW04-0036441995</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.bool</a> &gt; <span class="el_source">Mask.java</span></div><h1>Mask.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.bool;
+
+import java.util.Arrays;
+
+/**
+ * This class supports work with boolean functions by concept of masks.
+ * &lt;p&gt;
+ * For example, consider a Boolean function defined over variables A, B, C and D
+ * (i.e. its domain is {A, B, C, D}). Mask “0x1x” represents all value
+ * assignments in which A=0 and C=1 (we don't care for B and D)); here there are
+ * for such assignments which we can specify by more specific masks: “0010”,
+ * “0011”, “0110” and “0111”.
+ * &lt;/p&gt;
+ * 
+ * @author Igor Petkovski
+ * 
+ */
+public class Mask {
+
+	private MaskValue[] maskValues;
+
+<span class="fc" id="L22">	public Mask(MaskValue[] maskValues) {</span>
+<span class="fc" id="L23">		this.maskValues = maskValues;</span>
+<span class="fc" id="L24">	}</span>
+
+	/**
+	 * Method retrieves MaskValue at the specified index of the Mask instance.
+	 * 
+	 * @param index
+	 *            - Mask index
+	 * @return - MaskValue at submitted index
+	 */
+	public MaskValue getValue(int index) {
+<span class="pc bpc" id="L34" title="2 of 4 branches missed.">		if (index &lt; 0 || index &gt;= maskValues.length) {</span>
+<span class="nc" id="L35">			throw new IndexOutOfBoundsException(&quot;Mask length is: &quot;</span>
+					+ maskValues.length + &quot;. You have entered index: &quot; + index);
+		}
+<span class="fc" id="L38">		return maskValues[index];</span>
+	}
+
+	/**
+	 * Parses input string and creates new Mask instance. Using fromIndex, you
+	 * can specify masks which do not contain don't cares.
+	 * &lt;p&gt;
+	 * Example: m1 and m2 are equivalent &lt;code&gt;
+	 * Mask m1 = new Mask(
+	 *   new MaskValue[] { 
+	 *     MaskValue.ZERO, MaskValue.DONT_CARE, MaskValue.ONE,
+	 * MaskValue.DONT_CASE } ); 
+	 * 
+	 * Mask m2 = Mask.parse(&quot;0x1x&quot;);
+	 * &lt;/code&gt;
+	 * &lt;/p&gt;
+	 * 
+	 * @param input
+	 *            String containing: '0', '1' or 'x' characters!
+	 * @return - new Mask instance
+	 */
+	public static Mask parse(String input) {
+<span class="pc bpc" id="L60" title="1 of 2 branches missed.">		if (!input.matches(&quot;[0x1]+&quot;)) {</span>
+<span class="nc" id="L61">			throw new IllegalArgumentException(</span>
+					&quot;Unsupported string type. Please enter the string only containing: '0', '1' or 'x' characters!&quot;);
+		}
+<span class="fc" id="L64">		MaskValue[] newMaskValues = new MaskValue[input.length()];</span>
+<span class="fc bfc" id="L65" title="All 2 branches covered.">		for (int i = 0; i &lt; input.length(); i++) {</span>
+<span class="fc bfc" id="L66" title="All 2 branches covered.">			if (input.charAt(i) == '0') {</span>
+<span class="fc" id="L67">				newMaskValues[i] = MaskValue.ZERO;</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">			} else if (input.charAt(i) == '1') {</span>
+<span class="fc" id="L69">				newMaskValues[i] = MaskValue.ONE;</span>
+			} else {
+<span class="fc" id="L71">				newMaskValues[i] = MaskValue.DONT_CARE;</span>
+			}
+		}
+<span class="fc" id="L74">		return new Mask(newMaskValues);</span>
+	}
+
+	/**
+	 * Compares if the current Mask instance is more general than submitted one.
+	 * 
+	 * @param otherMask
+	 *            - must be of equal size as the current Mask instance
+	 * @return - true or false
+	 */
+	public boolean isMoreGeneralThan(Mask otherMask) {
+<span class="pc bpc" id="L85" title="1 of 2 branches missed.">		if (maskValues.length != otherMask.getSize()) {</span>
+<span class="nc" id="L86">			throw new IllegalArgumentException(&quot;Masks differ in size!&quot;);</span>
+		}
+		// check if otherMask is not more general
+<span class="fc bfc" id="L89" title="All 2 branches covered.">		for (int i = 0; i &lt; maskValues.length; i++) {</span>
+<span class="pc bpc" id="L90" title="1 of 4 branches missed.">			switch (maskValues[i]) {</span>
+				case DONT_CARE :
+<span class="fc" id="L92">					continue;</span>
+				case ONE :
+<span class="pc bpc" id="L94" title="1 of 2 branches missed.">					if (otherMask.maskValues[i].equals(MaskValue.ONE)) {</span>
+<span class="fc" id="L95">						continue;</span>
+					} else {
+<span class="nc" id="L97">						return false;</span>
+					}
+				case ZERO :
+<span class="pc bpc" id="L100" title="1 of 2 branches missed.">					if (otherMask.maskValues[i].equals(MaskValue.ZERO)) {</span>
+<span class="fc" id="L101">						continue;</span>
+					} else {
+<span class="nc" id="L103">						return false;</span>
+					}
+			}
+		}
+		// if masks are not equal this.mask is more general
+<span class="pc bpc" id="L108" title="1 of 2 branches missed.">		if (!maskValues.equals(otherMask.maskValues)) {</span>
+<span class="fc" id="L109">			return true;</span>
+		}
+		// otherwise they are equal and result is false
+<span class="nc" id="L112">		return false;</span>
+	}
+
+	/**
+	 * Combines two masks into new, more general Mask instance.
+	 * 
+	 * @param mask1
+	 *            - must be same size of mask2
+	 * @param mask2
+	 *            - must be same size of mask1
+	 * @return new Mask instance
+	 */
+	public static Mask combine(Mask mask1, Mask mask2) {
+<span class="pc bpc" id="L125" title="2 of 4 branches missed.">		if (mask1 == null || mask2 == null) {</span>
+<span class="nc" id="L126">			throw new IllegalArgumentException(&quot;Mask cannot me null!&quot;);</span>
+		}
+<span class="fc bfc" id="L128" title="All 2 branches covered.">		if (mask1.getSize() != mask2.getSize()) {</span>
+<span class="fc" id="L129">			throw new IllegalArgumentException(&quot;Masks differ in size!&quot;);</span>
+		}
+<span class="fc" id="L131">		MaskValue[] newMaskValues = new MaskValue[mask1.getSize()];</span>
+		// if diffCounter==0 at the end masks are the same
+<span class="fc" id="L133">		int diffCounter = 0;</span>
+<span class="fc bfc" id="L134" title="All 2 branches covered.">		for (int i = 0; i &lt; mask1.getSize(); i++) {</span>
+			// if both mask value is DONT_CARE
+<span class="fc bfc" id="L136" title="All 4 branches covered.">			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)</span>
+					&amp;&amp; mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+<span class="fc" id="L138">				newMaskValues[i] = MaskValue.DONT_CARE;</span>
+			}
+			// if one mask value is DONT_CARE
+<span class="fc bfc" id="L141" title="All 4 branches covered.">			if (mask1.maskValues[i].equals(MaskValue.DONT_CARE)</span>
+					&amp;&amp; !mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+<span class="fc" id="L143">				newMaskValues[i] = MaskValue.DONT_CARE;</span>
+<span class="fc" id="L144">				diffCounter++;</span>
+			}
+<span class="fc bfc" id="L146" title="All 4 branches covered.">			if (!mask1.maskValues[i].equals(MaskValue.DONT_CARE)</span>
+					&amp;&amp; mask2.maskValues[i].equals(MaskValue.DONT_CARE)) {
+<span class="fc" id="L148">				newMaskValues[i] = MaskValue.DONT_CARE;</span>
+<span class="fc" id="L149">				diffCounter++;</span>
+			}
+			// if mask values are the same
+<span class="fc bfc" id="L152" title="All 2 branches covered.">			if (mask1.maskValues[i].equals(mask2.maskValues[i])) {</span>
+<span class="fc" id="L153">				newMaskValues[i] = mask1.maskValues[i];</span>
+			} else {
+<span class="fc" id="L155">				newMaskValues[i] = MaskValue.DONT_CARE;</span>
+<span class="fc" id="L156">				diffCounter++;</span>
+			}
+		}
+<span class="fc bfc" id="L159" title="All 2 branches covered.">		if (diffCounter == 0) {</span>
+<span class="fc" id="L160">			return null;</span>
+		}
+<span class="fc" id="L162">		return new Mask(newMaskValues);</span>
+	}
+
+	public static Mask fromIndex(int size, int value) {
+		// check arguments
+<span class="fc bfc" id="L167" title="All 2 branches covered.">		if (size &lt; 1) {</span>
+<span class="fc" id="L168">			throw new IllegalArgumentException(&quot;Mask size must be &gt; 0.&quot;);</span>
+		}
+<span class="fc bfc" id="L170" title="All 2 branches covered.">		if (value &gt; Math.pow(2, size)) {</span>
+<span class="fc" id="L171">			throw new IllegalArgumentException(</span>
+					&quot;Designated value is greater than size allows.&quot;);
+		}
+		// create new mask
+<span class="fc" id="L175">		return Mask.parse(addPadding(Integer.toBinaryString(value), &quot;0&quot;, size));</span>
+	}
+
+	/**
+	 * Returns the number of MaskValue.ZERO values in Mask instance.
+	 * 
+	 * @return number of ZERO values
+	 */
+	public int getNumberOfZeros() {
+<span class="fc" id="L184">		int numberOfZeros = 0;</span>
+<span class="fc bfc" id="L185" title="All 2 branches covered.">		for (MaskValue value : maskValues) {</span>
+<span class="fc bfc" id="L186" title="All 2 branches covered.">			if (value.equals(MaskValue.ZERO)) {</span>
+<span class="fc" id="L187">				numberOfZeros++;</span>
+			}
+		}
+<span class="fc" id="L190">		return numberOfZeros;</span>
+	}
+
+	/**
+	 * Returns the number of MaskValue.ONE values in Mask instance.
+	 * 
+	 * @return number of ONE values
+	 */
+	public int getNumberOfOnes() {
+<span class="fc" id="L199">		int numberOfOnes = 0;</span>
+<span class="fc bfc" id="L200" title="All 2 branches covered.">		for (MaskValue value : maskValues) {</span>
+<span class="fc bfc" id="L201" title="All 2 branches covered.">			if (value.equals(MaskValue.ONE)) {</span>
+<span class="fc" id="L202">				numberOfOnes++;</span>
+			}
+		}
+<span class="fc" id="L205">		return numberOfOnes;</span>
+	}
+
+	/**
+	 * Returns the number of MaskValue.DONT_CARE values in Mask instance.
+	 * 
+	 * @return number of DONT_CARE values
+	 */
+	public int getNumberOfDontCares() {
+<span class="nc" id="L214">		int numberOfDontCares = 0;</span>
+<span class="nc bnc" id="L215" title="All 2 branches missed.">		for (MaskValue value : maskValues) {</span>
+<span class="nc bnc" id="L216" title="All 2 branches missed.">			if (value.equals(MaskValue.DONT_CARE)) {</span>
+<span class="nc" id="L217">				numberOfDontCares++;</span>
+			}
+		}
+<span class="nc" id="L220">		return numberOfDontCares;</span>
+	}
+
+	public int getSize() {
+<span class="fc" id="L224">		return maskValues.length;</span>
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+<span class="nc" id="L234">		final int prime = 31;</span>
+<span class="nc" id="L235">		int result = 1;</span>
+<span class="nc" id="L236">		result = prime * result + Arrays.hashCode(maskValues);</span>
+<span class="nc" id="L237">		return result;</span>
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+<span class="pc bpc" id="L247" title="1 of 2 branches missed.">		if (this == obj)</span>
+<span class="nc" id="L248">			return true;</span>
+<span class="pc bpc" id="L249" title="1 of 2 branches missed.">		if (obj == null)</span>
+<span class="nc" id="L250">			return false;</span>
+<span class="pc bpc" id="L251" title="1 of 2 branches missed.">		if (getClass() != obj.getClass())</span>
+<span class="nc" id="L252">			return false;</span>
+<span class="fc" id="L253">		Mask other = (Mask) obj;</span>
+<span class="pc bpc" id="L254" title="1 of 2 branches missed.">		if (!Arrays.equals(maskValues, other.maskValues))</span>
+<span class="nc" id="L255">			return false;</span>
+<span class="fc" id="L256">		return true;</span>
+	}
+
+	/**
+	 * Adds padding at the start of the original String.
+	 * 
+	 * @param originalString
+	 *            - original string value
+	 * @param padding
+	 *            - string value to use as a padding
+	 * @param maxLength
+	 *            - new String length
+	 * @return new padded String instance
+	 */
+	private static String addPadding(String originalString, String padding,
+			int maxLength) {
+<span class="fc" id="L272">		String prefix = &quot;&quot;;</span>
+<span class="fc bfc" id="L273" title="All 2 branches covered.">		for (int i = 0; i &lt; maxLength - originalString.length(); i++) {</span>
+<span class="fc" id="L274">			prefix = prefix.concat(padding);</span>
+		}
+<span class="fc" id="L276">		return prefix + originalString;</span>
+	}
+
+	@Override
+	public String toString() {
+<span class="nc" id="L281">		String result = &quot;&quot;;</span>
+<span class="nc bnc" id="L282" title="All 2 branches missed.">		for(int i=0; i&lt;maskValues.length; i++) {</span>
+<span class="nc bnc" id="L283" title="All 4 branches missed.">			switch(maskValues[i]) {</span>
+				case ZERO :
+<span class="nc" id="L285">					result = result.concat(&quot;0&quot;);</span>
+<span class="nc" id="L286">					break;</span>
+				case ONE :
+<span class="nc" id="L288">					result = result.concat(&quot;1&quot;);</span>
+<span class="nc" id="L289">					break;</span>
+				case DONT_CARE :
+<span class="nc" id="L291">					result = result.concat(&quot;x&quot;);</span>
+					break;
+			}
+		}
+<span class="nc" id="L295">		return result;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.0.201403182114</span></div></body></html>
