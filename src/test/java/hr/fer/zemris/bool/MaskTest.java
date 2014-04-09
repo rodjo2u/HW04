@@ -74,6 +74,11 @@ public class MaskTest {
 	public void testGetNumberOfZeros() {
 		assertEquals("Nuber of zeroes is not what it should be.", 2, Mask.parse("010").getNumberOfZeros());
 	}
+	
+	@Test
+	public void testGetNumberOfDontCares() {
+		assertEquals("Nuber of dont cares is not what it should be.", 2, Mask.parse("x10x").getNumberOfDontCares());
+	}
 
 	@Test
 	public void testGetNumberOfOnes() {

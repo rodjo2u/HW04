@@ -1,5 +1,6 @@
 package hr.fer.zemris.bool;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -35,7 +36,10 @@ public abstract class BooleanOperator implements BooleanSource {
 	public List<BooleanVariable> getDomain() {
 		List<BooleanVariable> booleanVariableList = new LinkedList<BooleanVariable>();
 		for (BooleanSource s : booleanSourceList) {
-			booleanVariableList.addAll(s.getDomain());
+			if(!booleanVariableList.contains(s)) {
+				booleanVariableList.addAll(s.getDomain());
+			}
+			
 		}
 
 		return booleanVariableList;
